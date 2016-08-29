@@ -1,0 +1,66 @@
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+0    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+16   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+16   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+16   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+16   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+16   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+16   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+16   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+216  [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:26:27 CEST 2016
+1964 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:26:29 CEST 2016
+2668 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.uniroma2.it,Mon Aug 29 16:26:30 CEST 2016
+3979 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:26:31 CEST 2016
+5968 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:26:33 CEST 2016
+7643 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.uniroma2.it,Mon Aug 29 16:26:35 CEST 2016
+7964 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:26:35 CEST 2016
+9972 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:26:37 CEST 2016
+11974 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:26:39 CEST 2016
+12659 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.uniroma2.it,Mon Aug 29 16:26:40 CEST 2016
+13971 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:26:41 CEST 2016
+15958 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:26:43 CEST 2016
+17656 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.uniroma2.it,Mon Aug 29 16:26:45 CEST 2016
+17967 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:26:45 CEST 2016
+19952 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:26:47 CEST 2016
+21966 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:26:49 CEST 2016
+22668 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.uniroma2.it,Mon Aug 29 16:26:50 CEST 2016
+23961 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:26:51 CEST 2016
+25974 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:26:53 CEST 2016
+27668 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.uniroma2.it,Mon Aug 29 16:26:55 CEST 2016
+27968 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:26:55 CEST 2016
+29993 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:26:57 CEST 2016
+31975 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:26:59 CEST 2016
+32665 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.uniroma2.it,Mon Aug 29 16:27:00 CEST 2016
+33992 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:27:01 CEST 2016
+35969 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:27:03 CEST 2016
+37671 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.uniroma2.it,Mon Aug 29 16:27:05 CEST 2016
+37976 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:27:05 CEST 2016
+39975 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:27:07 CEST 2016
+41968 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:27:09 CEST 2016
+42661 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.uniroma2.it,Mon Aug 29 16:27:10 CEST 2016
+43968 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:27:11 CEST 2016
+45981 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:27:13 CEST 2016
+47659 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.uniroma2.it,Mon Aug 29 16:27:15 CEST 2016
+47987 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:27:15 CEST 2016
+49974 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:27:17 CEST 2016
+51975 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:27:19 CEST 2016
+52666 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.uniroma2.it,Mon Aug 29 16:27:20 CEST 2016
+54021 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:27:21 CEST 2016
+56057 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:27:23 CEST 2016
+57767 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.uniroma2.it,Mon Aug 29 16:27:25 CEST 2016
+57968 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:27:25 CEST 2016
+59966 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:27:27 CEST 2016
+61974 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:27:29 CEST 2016
+62659 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.uniroma2.it,Mon Aug 29 16:27:30 CEST 2016
+63965 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:27:31 CEST 2016
+65968 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:27:33 CEST 2016
+67652 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.uniroma2.it,Mon Aug 29 16:27:35 CEST 2016
+67987 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:27:35 CEST 2016
+69974 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:27:37 CEST 2016
