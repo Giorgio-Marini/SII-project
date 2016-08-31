@@ -1,0 +1,3 @@
+//FrequencyMode FrequencySecond Max Min N_contact_max  SleepMode Interval_SM(h) Day 
+0 2 0 0 0 0 AM THU
+0 5 0 0 0 1 AM THU,SAT
