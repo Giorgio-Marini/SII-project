@@ -2,7 +2,9 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.InputStreamReader;
+import java.nio.file.attribute.UserPrincipalLookupService;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 import org.quartz.*;
@@ -11,7 +13,8 @@ import org.quartz.impl.StdSchedulerFactory;
 public class Test_quartz{
 	private static ArrayList<JobDetail> groupJob = new ArrayList<JobDetail>();
 	private static ArrayList<Trigger> groupTrigger = new ArrayList<Trigger>();
-	private static ArrayList<urlDependency> connectUrl = new ArrayList<urlDependency>();
+	public static ArrayList<urlDependency> connectUrl = new ArrayList<urlDependency>();
+	public static  ArrayList<Integer> maxC = new ArrayList<Integer>();
 
 	//read config file of the url and timing
 	public static void readConfigFile(String configPath) throws FileNotFoundException{
@@ -42,15 +45,19 @@ public class Test_quartz{
 			urlD.setValue(timing);
 			System.out.println("this is the cron Expression:: "+ urlD.getCronExpression());
 			connectUrl.add(urlD);
+			//System.out.println("max contact = " + urlD.getMax_contact());
 		}
+		
 	};
-	//set the value of job and trigger
+	//set the value of job and trigger, we can init the values for maxContact list
 	public static void settingJobTrigger(){
 		int i = 0;
-			
+
 			while(i < connectUrl.size()){
 				JobDetail job = JobBuilder.newJob(Get_url.class).withIdentity("job"+i, "group"+i)
 						.usingJobData("url", connectUrl.get(i).getUrl())
+						.usingJobData("index", i)
+						.usingJobData("maxContact", connectUrl.get(i).getMax_contact())
 						.build();
 					Trigger trigger;
 					System.out.println("sleep mode :" + connectUrl.get(i).isSleep_mode() );
@@ -63,7 +70,7 @@ public class Test_quartz{
 						.withSchedule(SimpleScheduleBuilder.simpleSchedule().withIntervalInSeconds(connectUrl.get(i).getFixed_frequency()).repeatForever())
 						.build();
 					}
-				
+				maxC.add(0);
 				groupJob.add(job);
 				groupTrigger.add(trigger);
 				i++;
@@ -84,6 +91,7 @@ public class Test_quartz{
 	
 	public static void main(String[] args) throws Exception{
 		System.out.println("OUR BOT IS STARTING");
+		
 		readConfigFile("config.txt");
 		settingJobTrigger();
 		runJob();

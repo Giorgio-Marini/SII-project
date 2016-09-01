@@ -64,3 +64,1388 @@
 67652 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.uniroma2.it,Mon Aug 29 16:27:35 CEST 2016
 67987 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:27:35 CEST 2016
 69974 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.google.it,Mon Aug 29 16:27:37 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+0    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+32   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+32   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+32   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+32   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+32   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+32   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+32   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+47   [DefaultQuartzScheduler_Worker-1] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+47   [DefaultQuartzScheduler_Worker-1] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+1755 [DefaultQuartzScheduler_Worker-2] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+1755 [DefaultQuartzScheduler_Worker-2] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+3747 [DefaultQuartzScheduler_Worker-3] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+3747 [DefaultQuartzScheduler_Worker-3] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+5753 [DefaultQuartzScheduler_Worker-4] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+5753 [DefaultQuartzScheduler_Worker-4] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+7761 [DefaultQuartzScheduler_Worker-5] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+7761 [DefaultQuartzScheduler_Worker-5] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+9758 [DefaultQuartzScheduler_Worker-6] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+9758 [DefaultQuartzScheduler_Worker-6] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+11752 [DefaultQuartzScheduler_Worker-7] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+11752 [DefaultQuartzScheduler_Worker-7] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+13755 [DefaultQuartzScheduler_Worker-8] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+13755 [DefaultQuartzScheduler_Worker-8] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+15753 [DefaultQuartzScheduler_Worker-9] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+15754 [DefaultQuartzScheduler_Worker-9] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+17754 [DefaultQuartzScheduler_Worker-10] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+17755 [DefaultQuartzScheduler_Worker-10] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+19754 [DefaultQuartzScheduler_Worker-1] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+19754 [DefaultQuartzScheduler_Worker-1] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+21750 [DefaultQuartzScheduler_Worker-2] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+21750 [DefaultQuartzScheduler_Worker-2] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+23752 [DefaultQuartzScheduler_Worker-3] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+23752 [DefaultQuartzScheduler_Worker-3] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+25747 [DefaultQuartzScheduler_Worker-4] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+25748 [DefaultQuartzScheduler_Worker-4] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+27753 [DefaultQuartzScheduler_Worker-5] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+27754 [DefaultQuartzScheduler_Worker-5] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+29762 [DefaultQuartzScheduler_Worker-6] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+29763 [DefaultQuartzScheduler_Worker-6] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+31753 [DefaultQuartzScheduler_Worker-7] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+31753 [DefaultQuartzScheduler_Worker-7] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+33754 [DefaultQuartzScheduler_Worker-8] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+33754 [DefaultQuartzScheduler_Worker-8] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:28)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+15   [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+37   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+37   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+37   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+37   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+37   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+37   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+37   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+53   [DefaultQuartzScheduler_Worker-1] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:30)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+53   [DefaultQuartzScheduler_Worker-1] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:30)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+1806 [DefaultQuartzScheduler_Worker-2] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:30)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+1806 [DefaultQuartzScheduler_Worker-2] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:30)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+3802 [DefaultQuartzScheduler_Worker-3] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:30)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+3802 [DefaultQuartzScheduler_Worker-3] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:30)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+5799 [DefaultQuartzScheduler_Worker-4] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:30)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+5799 [DefaultQuartzScheduler_Worker-4] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:30)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+7806 [DefaultQuartzScheduler_Worker-5] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:30)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+7807 [DefaultQuartzScheduler_Worker-5] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:30)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+0    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+31   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+31   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+31   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+31   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+47   [DefaultQuartzScheduler_Worker-1] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:30)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+47   [DefaultQuartzScheduler_Worker-1] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:30)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+1780 [DefaultQuartzScheduler_Worker-2] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:30)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+1780 [DefaultQuartzScheduler_Worker-2] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:30)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+3781 [DefaultQuartzScheduler_Worker-3] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:30)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+3781 [DefaultQuartzScheduler_Worker-3] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:30)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+5786 [DefaultQuartzScheduler_Worker-4] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:30)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+5786 [DefaultQuartzScheduler_Worker-4] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:30)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+16   [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+32   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+32   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+47   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+47   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+47   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+47   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+47   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+63   [DefaultQuartzScheduler_Worker-1] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+63   [DefaultQuartzScheduler_Worker-1] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+1809 [DefaultQuartzScheduler_Worker-2] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+1809 [DefaultQuartzScheduler_Worker-2] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+3814 [DefaultQuartzScheduler_Worker-3] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+3814 [DefaultQuartzScheduler_Worker-3] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+5809 [DefaultQuartzScheduler_Worker-4] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+5810 [DefaultQuartzScheduler_Worker-4] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+7811 [DefaultQuartzScheduler_Worker-5] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+7812 [DefaultQuartzScheduler_Worker-5] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+9813 [DefaultQuartzScheduler_Worker-6] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+9814 [DefaultQuartzScheduler_Worker-6] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+11816 [DefaultQuartzScheduler_Worker-7] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+11816 [DefaultQuartzScheduler_Worker-7] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+13802 [DefaultQuartzScheduler_Worker-8] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+13802 [DefaultQuartzScheduler_Worker-8] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+15806 [DefaultQuartzScheduler_Worker-9] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+15806 [DefaultQuartzScheduler_Worker-9] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+17805 [DefaultQuartzScheduler_Worker-10] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+17805 [DefaultQuartzScheduler_Worker-10] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+19807 [DefaultQuartzScheduler_Worker-1] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+19807 [DefaultQuartzScheduler_Worker-1] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+21800 [DefaultQuartzScheduler_Worker-2] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+21800 [DefaultQuartzScheduler_Worker-2] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+23816 [DefaultQuartzScheduler_Worker-3] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+23816 [DefaultQuartzScheduler_Worker-3] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+25816 [DefaultQuartzScheduler_Worker-4] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+25817 [DefaultQuartzScheduler_Worker-4] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+27800 [DefaultQuartzScheduler_Worker-5] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+27800 [DefaultQuartzScheduler_Worker-5] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+29815 [DefaultQuartzScheduler_Worker-6] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+29815 [DefaultQuartzScheduler_Worker-6] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+31805 [DefaultQuartzScheduler_Worker-7] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+31805 [DefaultQuartzScheduler_Worker-7] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+33814 [DefaultQuartzScheduler_Worker-8] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+33814 [DefaultQuartzScheduler_Worker-8] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+35807 [DefaultQuartzScheduler_Worker-9] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+35807 [DefaultQuartzScheduler_Worker-9] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+37814 [DefaultQuartzScheduler_Worker-10] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+37814 [DefaultQuartzScheduler_Worker-10] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+39806 [DefaultQuartzScheduler_Worker-1] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+39806 [DefaultQuartzScheduler_Worker-1] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+41815 [DefaultQuartzScheduler_Worker-2] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+41815 [DefaultQuartzScheduler_Worker-2] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+43801 [DefaultQuartzScheduler_Worker-3] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+43801 [DefaultQuartzScheduler_Worker-3] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+45804 [DefaultQuartzScheduler_Worker-4] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+45804 [DefaultQuartzScheduler_Worker-4] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:32)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+0    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+16   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+31   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+31   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+31   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+47   [DefaultQuartzScheduler_Worker-1] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:33)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+47   [DefaultQuartzScheduler_Worker-1] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:33)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+1785 [DefaultQuartzScheduler_Worker-2] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:33)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+1786 [DefaultQuartzScheduler_Worker-2] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:33)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+3784 [DefaultQuartzScheduler_Worker-3] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:33)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+3785 [DefaultQuartzScheduler_Worker-3] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:33)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+5785 [DefaultQuartzScheduler_Worker-4] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:33)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+5785 [DefaultQuartzScheduler_Worker-4] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:33)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+7786 [DefaultQuartzScheduler_Worker-5] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:33)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+7787 [DefaultQuartzScheduler_Worker-5] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:33)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+0    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+31   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+31   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+31   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+31   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+46   [DefaultQuartzScheduler_Worker-1] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:33)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+46   [DefaultQuartzScheduler_Worker-1] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:33)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+1800 [DefaultQuartzScheduler_Worker-2] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:33)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+1801 [DefaultQuartzScheduler_Worker-2] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:33)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+3801 [DefaultQuartzScheduler_Worker-3] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:33)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+3803 [DefaultQuartzScheduler_Worker-3] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:33)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+5802 [DefaultQuartzScheduler_Worker-4] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:33)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+5804 [DefaultQuartzScheduler_Worker-4] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:33)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+7812 [DefaultQuartzScheduler_Worker-5] ERROR org.quartz.core.JobRunShell  - Job group0.job0 threw an unhandled Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:33)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+7813 [DefaultQuartzScheduler_Worker-5] ERROR org.quartz.core.ErrorLogger  - Job (group0.job0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.quartz.JobDataMap.getIntegerFromString(JobDataMap.java:285)
+	at Get_url.execute(Get_url.java:33)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+0    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+31   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+31   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+31   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+31   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+369  [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:20:51 CEST 2016
+1949 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:20:53 CEST 2016
+3957 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:20:55 CEST 2016
+6274 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:20:57 CEST 2016
+8514 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:20:59 CEST 2016
+10262 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:21:01 CEST 2016
+11964 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:21:03 CEST 2016
+13953 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:21:05 CEST 2016
+15935 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:21:07 CEST 2016
+17942 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:21:09 CEST 2016
+19953 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:21:11 CEST 2016
+21974 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:21:13 CEST 2016
+23958 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:21:15 CEST 2016
+25950 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:21:17 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+0    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+31   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+31   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+31   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+31   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+231  [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:23:44 CEST 2016
+1941 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:23:46 CEST 2016
+3936 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:23:48 CEST 2016
+5942 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:23:50 CEST 2016
+7958 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:23:52 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+15   [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+52   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+52   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+52   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+52   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+52   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+52   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+52   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+283  [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:26:48 CEST 2016
+1896 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:26:50 CEST 2016
+3914 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:26:52 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+0    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+22   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+22   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+22   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+38   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+38   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+38   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+38   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+1927 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:27:24 CEST 2016
+2700 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 09:27:25 CEST 2016
+3238 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:27:22 CEST 2016
+3936 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:27:26 CEST 2016
+5945 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:27:28 CEST 2016
+7681 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 09:27:30 CEST 2016
+7930 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:27:30 CEST 2016
+9952 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:27:32 CEST 2016
+11946 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:27:34 CEST 2016
+12656 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 09:27:35 CEST 2016
+13927 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:27:36 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+16   [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+47   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+47   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+47   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+47   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+47   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+47   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+47   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+201  [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 09:29:30 CEST 2016
+1904 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:29:32 CEST 2016
+3293 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:29:30 CEST 2016
+3911 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:29:34 CEST 2016
+4831 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 09:29:35 CEST 2016
+5903 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:29:36 CEST 2016
+7905 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:29:38 CEST 2016
+9841 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 09:29:40 CEST 2016
+9907 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:29:40 CEST 2016
+11917 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:29:42 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+0    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+31   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+31   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+31   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+31   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+1472 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 09:32:00 CEST 2016
+1973 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:32:00 CEST 2016
+3291 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:31:58 CEST 2016
+3955 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:32:02 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+16   [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+31   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+31   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+31   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+31   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+265  [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:36:53 CEST 2016
+1542 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 09:36:55 CEST 2016
+1977 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:36:55 CEST 2016
+4272 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:36:57 CEST 2016
+5945 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:36:59 CEST 2016
+6551 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 09:37:00 CEST 2016
+8095 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:37:01 CEST 2016
+9966 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:37:03 CEST 2016
+11536 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 09:37:05 CEST 2016
+11957 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:37:05 CEST 2016
+13985 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:37:07 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+16   [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+31   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+31   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+31   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+31   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+247  [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:38:55 CEST 2016
+1919 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:38:56 CEST 2016
+3920 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:38:58 CEST 2016
+5921 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:39:00 CEST 2016
+7924 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:39:02 CEST 2016
+9924 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:39:04 CEST 2016
+11931 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:39:06 CEST 2016
+13923 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:39:08 CEST 2016
+15930 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:39:10 CEST 2016
+17925 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.google.it,Thu Sep 01 09:39:12 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+6    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+28   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+28   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+28   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+28   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+28   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+28   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+28   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+271  [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:01:39 CEST 2016
+677  [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:01:40 CEST 2016
+1894 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:01:41 CEST 2016
+3909 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:01:43 CEST 2016
+5642 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:01:45 CEST 2016
+5927 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:01:45 CEST 2016
+8014 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:01:47 CEST 2016
+9975 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:01:49 CEST 2016
+10736 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:01:50 CEST 2016
+13998 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:01:53 CEST 2016
+14948 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:01:51 CEST 2016
+15649 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:01:55 CEST 2016
+15980 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:01:55 CEST 2016
+17928 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:01:57 CEST 2016
+19883 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:01:59 CEST 2016
+20651 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:02:00 CEST 2016
+25631 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:02:05 CEST 2016
+30637 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:02:10 CEST 2016
+35636 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:02:15 CEST 2016
+40652 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:02:20 CEST 2016
+45657 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:02:25 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+8    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+33   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+35   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+37   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+39   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+39   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+40   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+40   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+438  [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:16:41 CEST 2016
+1896 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:16:43 CEST 2016
+3365 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:16:45 CEST 2016
+4179 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:16:45 CEST 2016
+5890 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:16:47 CEST 2016
+7885 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:16:49 CEST 2016
+8180 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:16:50 CEST 2016
+9896 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:16:51 CEST 2016
+11948 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:16:53 CEST 2016
+13192 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:16:55 CEST 2016
+13898 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:16:55 CEST 2016
+15894 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:16:57 CEST 2016
+17888 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:16:59 CEST 2016
+18185 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:17:00 CEST 2016
+23179 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:17:05 CEST 2016
+28181 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:17:10 CEST 2016
+33182 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:17:15 CEST 2016
+38208 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:17:20 CEST 2016
+43194 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:17:25 CEST 2016
+48276 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:17:30 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+7    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+34   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+36   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+38   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+40   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+40   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+40   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+41   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+603  [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:32:27 CEST 2016
+1932 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:32:29 CEST 2016
+2691 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:32:30 CEST 2016
+3919 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:32:31 CEST 2016
+5915 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:32:33 CEST 2016
+7691 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:32:35 CEST 2016
+7927 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:32:35 CEST 2016
+9924 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:32:37 CEST 2016
+11923 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:32:39 CEST 2016
+12691 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:32:40 CEST 2016
+14086 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:32:41 CEST 2016
+15917 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:32:43 CEST 2016
+17698 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:32:45 CEST 2016
+19911 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:32:47 CEST 2016
+22696 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:32:50 CEST 2016
+23914 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:32:45 CEST 2016
+27690 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:32:55 CEST 2016
+32691 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:33:00 CEST 2016
+37691 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:33:05 CEST 2016
+42689 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:33:10 CEST 2016
+47691 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:33:15 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+9    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+32   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+33   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+35   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+36   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+36   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+36   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+37   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+251  [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:34:12 CEST 2016
+1929 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:34:13 CEST 2016
+3103 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:34:15 CEST 2016
+3920 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:34:15 CEST 2016
+6221 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:34:17 CEST 2016
+7921 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:34:19 CEST 2016
+8098 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:34:20 CEST 2016
+9923 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:34:21 CEST 2016
+11929 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:34:23 CEST 2016
+13130 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:34:25 CEST 2016
+13935 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:34:25 CEST 2016
+15944 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:34:27 CEST 2016
+17922 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:34:29 CEST 2016
+18097 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:34:30 CEST 2016
+23108 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:34:35 CEST 2016
+28099 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:34:40 CEST 2016
+33099 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:34:45 CEST 2016
+38102 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:34:50 CEST 2016
+43100 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:34:55 CEST 2016
+48105 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:35:00 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+7    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+35   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+37   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+39   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+40   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+40   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+40   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+40   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+438  [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:37:07 CEST 2016
+1953 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:37:09 CEST 2016
+2379 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:37:10 CEST 2016
+3920 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:37:11 CEST 2016
+5944 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:37:13 CEST 2016
+7384 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:37:15 CEST 2016
+7939 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:37:15 CEST 2016
+9955 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:37:17 CEST 2016
+11922 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:37:19 CEST 2016
+12376 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:37:20 CEST 2016
+13950 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:37:21 CEST 2016
+16248 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:37:23 CEST 2016
+17378 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:37:25 CEST 2016
+17926 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.google.it,Thu Sep 01 10:37:25 CEST 2016
+22373 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:37:30 CEST 2016
+27377 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.uniroma2.it,Thu Sep 01 10:37:35 CEST 2016
