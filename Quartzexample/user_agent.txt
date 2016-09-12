@@ -1,0 +1,3 @@
+//	User-agent of the single URL
+MariniNanniBOT-1.1
+default

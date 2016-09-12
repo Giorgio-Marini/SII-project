@@ -16,6 +16,7 @@ public class urlDependency {
 	private int hour_start;
 	private int hour_stop;
 	private int frequency;
+	private String user_agent;
 	private String CronExpression;
 	public int isFrequency() {
 		return frequency;
@@ -274,6 +275,14 @@ public class urlDependency {
 		//System.out.println(log);
 		return log;
 		
+	}
+
+	public String getUser_agent() {
+		return user_agent;
+	}
+
+	public void setUser_agent(String user_agent) {
+		this.user_agent = user_agent;
 	}	
 
 }

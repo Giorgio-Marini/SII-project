@@ -1577,3 +1577,1124 @@ Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to jav
 67948 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,Mon Sep 12 12:16:31 CEST 2016
 75905 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 12:16:39 CEST 2016
 84959 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.google.it,Mon Sep 12 12:16:48 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+5    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+27   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+29   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+30   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+31   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+31   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+8    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+31   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+33   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+34   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+34   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+34   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+35   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+39938 [DefaultQuartzScheduler_Worker-1] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+39940 [DefaultQuartzScheduler_Worker-2] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+39986 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:00:00 CEST 2016
+39986 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:00:00 CEST 2016
+39986 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:00:00 CEST 2016
+40112 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:00:00 CEST 2016
+40241 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:00:00 CEST 2016
+40244 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:00:00 CEST 2016
+51051 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:00:10 CEST 2016
+56902 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:00:16 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+15   [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+38   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+39   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+41   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+42   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+42   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+42   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+42   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+48272 [DefaultQuartzScheduler_Worker-1] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+48272 [DefaultQuartzScheduler_Worker-2] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+48321 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:02:00 CEST 2016
+48321 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:02:00 CEST 2016
+48326 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:02:00 CEST 2016
+48398 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:02:00 CEST 2016
+48399 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:02:00 CEST 2016
+48399 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:02:00 CEST 2016
+50937 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:02:02 CEST 2016
+56860 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:02:08 CEST 2016
+67933 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:02:19 CEST 2016
+75858 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:02:27 CEST 2016
+84947 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:02:36 CEST 2016
+95414 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:02:46 CEST 2016
+101935 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:02:53 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+5    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+39   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+40   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+42   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+43   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+43   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+43   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+44   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+46504 [DefaultQuartzScheduler_Worker-1] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+46504 [DefaultQuartzScheduler_Worker-2] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+46664 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:04:00 CEST 2016
+46664 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:04:00 CEST 2016
+46670 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:04:00 CEST 2016
+46783 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:04:00 CEST 2016
+46786 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:04:00 CEST 2016
+46787 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:04:00 CEST 2016
+50956 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:04:04 CEST 2016
+56880 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:04:10 CEST 2016
+68282 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:04:21 CEST 2016
+75887 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:04:29 CEST 2016
+84971 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:04:38 CEST 2016
+94882 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:04:48 CEST 2016
+101956 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:04:55 CEST 2016
+113889 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:05:07 CEST 2016
+119004 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:05:12 CEST 2016
+132890 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:05:26 CEST 2016
+135965 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:05:29 CEST 2016
+151880 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:05:45 CEST 2016
+152966 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:05:46 CEST 2016
+170880 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:06:04 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+7    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+26   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+30   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+32   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+33   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+33   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+33   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+34   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+47801 [DefaultQuartzScheduler_Worker-1] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+47803 [DefaultQuartzScheduler_Worker-2] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+47857 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:08:00 CEST 2016
+47861 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:08:00 CEST 2016
+47862 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:08:00 CEST 2016
+47937 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:08:00 CEST 2016
+47938 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:08:00 CEST 2016
+47947 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:08:00 CEST 2016
+50955 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:08:03 CEST 2016
+56876 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:08:09 CEST 2016
+67951 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:08:20 CEST 2016
+75882 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:08:28 CEST 2016
+84973 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:08:37 CEST 2016
+94879 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:08:47 CEST 2016
+1    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+8    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+26   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+27   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+28   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+29   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+29   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+30   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+40901 [DefaultQuartzScheduler_Worker-1] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+40903 [DefaultQuartzScheduler_Worker-2] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+40962 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:10:00 CEST 2016
+40962 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:10:00 CEST 2016
+40962 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:10:00 CEST 2016
+41051 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:10:00 CEST 2016
+41053 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:10:00 CEST 2016
+41055 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:10:00 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+9    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+35   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+35   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+38   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+38   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+38   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+39   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+39   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+46632 [DefaultQuartzScheduler_Worker-1] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+46633 [DefaultQuartzScheduler_Worker-2] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+46660 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:12:00 CEST 2016
+46663 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:12:00 CEST 2016
+46669 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:12:00 CEST 2016
+46753 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:12:00 CEST 2016
+46757 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:12:00 CEST 2016
+46758 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:12:00 CEST 2016
+50976 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:12:04 CEST 2016
+57100 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:12:10 CEST 2016
+67945 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:12:21 CEST 2016
+75862 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:12:29 CEST 2016
+84946 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:12:38 CEST 2016
+94868 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:12:48 CEST 2016
+101939 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:12:55 CEST 2016
+113867 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:13:07 CEST 2016
+119062 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:13:12 CEST 2016
+132874 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:13:26 CEST 2016
+135947 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:13:29 CEST 2016
+151857 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:13:45 CEST 2016
+152950 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:13:46 CEST 2016
+170862 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:14:04 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+10   [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+31   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+34   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+35   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+36   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+36   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+36   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+36   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+1286 [DefaultQuartzScheduler_Worker-1] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+1291 [DefaultQuartzScheduler_Worker-3] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+1791 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:34:00 CEST 2016
+1869 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:34:00 CEST 2016
+17482 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:34:15 CEST 2016
+19131 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:34:17 CEST 2016
+34404 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:34:32 CEST 2016
+37912 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:34:36 CEST 2016
+50949 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:34:49 CEST 2016
+56872 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:34:55 CEST 2016
+67962 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:35:06 CEST 2016
+75872 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:35:14 CEST 2016
+84957 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:35:23 CEST 2016
+94870 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:35:33 CEST 2016
+101959 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:35:40 CEST 2016
+113875 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:35:52 CEST 2016
+118955 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:35:57 CEST 2016
+132894 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:36:11 CEST 2016
+135977 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:36:14 CEST 2016
+151873 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:36:30 CEST 2016
+152958 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:36:31 CEST 2016
+170870 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:36:49 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+14   [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+42   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+43   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+44   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+45   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+45   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+45   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+45   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+49715 [DefaultQuartzScheduler_Worker-1] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+49717 [DefaultQuartzScheduler_Worker-2] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+49830 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:44:00 CEST 2016
+49830 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:44:00 CEST 2016
+49830 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:44:00 CEST 2016
+49918 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:44:00 CEST 2016
+49997 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:44:00 CEST 2016
+50000 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:44:00 CEST 2016
+50947 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:44:01 CEST 2016
+56851 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:44:07 CEST 2016
+67943 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:44:18 CEST 2016
+75850 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:44:26 CEST 2016
+84940 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:44:35 CEST 2016
+94861 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:44:45 CEST 2016
+101932 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:44:52 CEST 2016
+113874 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:45:04 CEST 2016
+118944 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:45:09 CEST 2016
+132865 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:45:23 CEST 2016
+135931 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:45:26 CEST 2016
+151870 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:45:42 CEST 2016
+153059 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Mon Sep 12 13:45:43 CEST 2016
+170855 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 13:46:01 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+10   [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+29   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+32   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+33   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+33   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+33   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+33   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+15424 [DefaultQuartzScheduler_Worker-1] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+15428 [DefaultQuartzScheduler_Worker-2] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+15625 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 14:03:00 CEST 2016
+15635 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Mon Sep 12 14:03:00 CEST 2016
+16966 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Sep 12 14:03:01 CEST 2016
+19011 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 14:03:03 CEST 2016
+33957 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Mon Sep 12 14:03:18 CEST 2016
+37875 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 14:03:22 CEST 2016
+50958 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Sep 12 14:03:35 CEST 2016
+56903 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 14:03:41 CEST 2016
+67952 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Mon Sep 12 14:03:52 CEST 2016
+75869 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 14:04:00 CEST 2016
+84960 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.google.it,Mon Sep 12 14:04:09 CEST 2016
+94886 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 14:04:19 CEST 2016
+101970 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Sep 12 14:04:26 CEST 2016
+113869 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 14:04:38 CEST 2016
+118961 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Mon Sep 12 14:04:43 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+46   [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+73   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+74   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+104  [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+106  [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+106  [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+106  [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+107  [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+11   [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+32   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+35   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+37   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+39   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+39   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+39   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+40   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+25   [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+66   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+77   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+79   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+80   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+80   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+80   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+81   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+1    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+6    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+29   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+33   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+34   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+35   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+35   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+35   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+36   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+7    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+26   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+27   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+28   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+29   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+29   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+29   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+29   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+9    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+24   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+25   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+27   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+27   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+27   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+28   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+28   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+6    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+34   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+35   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+36   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+37   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+37   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+37   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+38   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+7    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+26   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+44   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+46   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+47   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+48   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+48   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+48   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+1    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+9    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+24   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+25   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+26   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+26   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+27   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+27   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+27   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+6    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+19   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+21   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+24   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+27   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+27   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+27   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+27   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+4455 [DefaultQuartzScheduler_Worker-1] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+4456 [DefaultQuartzScheduler_Worker-2] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+4483 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 16:07:00 CEST 2016
+4597 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:07:00 CEST 2016
+16966 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:07:12 CEST 2016
+18882 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 16:07:14 CEST 2016
+33973 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:07:29 CEST 2016
+37890 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 16:07:33 CEST 2016
+50967 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:07:46 CEST 2016
+56883 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 16:07:52 CEST 2016
+68085 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:08:03 CEST 2016
+75884 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 16:08:11 CEST 2016
+84993 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:08:20 CEST 2016
+94894 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 16:08:30 CEST 2016
+101989 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:08:37 CEST 2016
+113894 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 16:08:49 CEST 2016
+119246 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:08:54 CEST 2016
+132909 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 16:09:08 CEST 2016
+135973 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:09:11 CEST 2016
+151989 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 16:09:27 CEST 2016
+153007 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:09:28 CEST 2016
+170941 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 16:09:46 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+8    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+28   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+30   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+31   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+32   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+32   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+32   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+32   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+39354 [DefaultQuartzScheduler_Worker-1] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+39355 [DefaultQuartzScheduler_Worker-2] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+39496 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:16:00 CEST 2016
+39496 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:16:00 CEST 2016
+39497 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:16:00 CEST 2016
+50974 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:16:11 CEST 2016
+67980 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:16:28 CEST 2016
+85025 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:16:45 CEST 2016
+101997 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:17:02 CEST 2016
+118979 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:17:19 CEST 2016
+135993 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:17:36 CEST 2016
+152975 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:17:53 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+6    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+34   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+35   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+36   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+37   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+37   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+37   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+38   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+30133 [DefaultQuartzScheduler_Worker-1] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+30135 [DefaultQuartzScheduler_Worker-2] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+30271 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:22:00 CEST 2016
+30271 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:22:00 CEST 2016
+33963 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:22:03 CEST 2016
+50966 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:22:20 CEST 2016
+67943 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:22:37 CEST 2016
+84932 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:22:54 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+8    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+24   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+24   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+26   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+26   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+26   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+26   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+27   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+3920 [DefaultQuartzScheduler_Worker-1] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+3922 [DefaultQuartzScheduler_Worker-2] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+4055 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:25:00 CEST 2016
+17047 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:25:12 CEST 2016
+33972 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:25:29 CEST 2016
+50982 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:25:46 CEST 2016
+67984 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:26:03 CEST 2016
+84980 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:26:20 CEST 2016
+101979 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:26:37 CEST 2016
+118979 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:26:54 CEST 2016
+135999 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:27:11 CEST 2016
+153028 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:27:28 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+6    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+23   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+28   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+30   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+31   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+31   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+32   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+48361 [DefaultQuartzScheduler_Worker-1] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+48363 [DefaultQuartzScheduler_Worker-2] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+48510 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:30:00 CEST 2016
+48514 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:30:00 CEST 2016
+48520 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:30:00 CEST 2016
+50963 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:30:02 CEST 2016
+67964 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:30:19 CEST 2016
+88042 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:30:36 CEST 2016
+101963 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:30:53 CEST 2016
+118964 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:31:10 CEST 2016
+135956 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:31:27 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+6    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+24   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+26   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+30   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+31   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+31   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+32   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+49149 [DefaultQuartzScheduler_Worker-1] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+49151 [DefaultQuartzScheduler_Worker-2] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+49155 [DefaultQuartzScheduler_Worker-5] ERROR org.quartz.core.JobRunShell  - Job preliminarGroup0.preliminar0 threw an unhandled Exception: 
+java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+49156 [DefaultQuartzScheduler_Worker-7] ERROR org.quartz.core.JobRunShell  - Job preliminarGroup0.preliminar0 threw an unhandled Exception: 
+java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+49157 [DefaultQuartzScheduler_Worker-3] ERROR org.quartz.core.JobRunShell  - Job preliminarGroup0.preliminar0 threw an unhandled Exception: 
+java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+49157 [DefaultQuartzScheduler_Worker-6] ERROR org.quartz.core.JobRunShell  - Job preliminarGroup1.preliminar1 threw an unhandled Exception: 
+java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+49157 [DefaultQuartzScheduler_Worker-4] ERROR org.quartz.core.JobRunShell  - Job preliminarGroup1.preliminar1 threw an unhandled Exception: 
+java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+49156 [DefaultQuartzScheduler_Worker-8] ERROR org.quartz.core.JobRunShell  - Job preliminarGroup1.preliminar1 threw an unhandled Exception: 
+java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+49162 [DefaultQuartzScheduler_Worker-4] ERROR org.quartz.core.ErrorLogger  - Job (preliminarGroup1.preliminar1 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Long.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+49161 [DefaultQuartzScheduler_Worker-6] ERROR org.quartz.core.ErrorLogger  - Job (preliminarGroup1.preliminar1 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Long.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+49161 [DefaultQuartzScheduler_Worker-3] ERROR org.quartz.core.ErrorLogger  - Job (preliminarGroup0.preliminar0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Long.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+49160 [DefaultQuartzScheduler_Worker-7] ERROR org.quartz.core.ErrorLogger  - Job (preliminarGroup0.preliminar0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Long.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+49160 [DefaultQuartzScheduler_Worker-5] ERROR org.quartz.core.ErrorLogger  - Job (preliminarGroup0.preliminar0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Long.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+49162 [DefaultQuartzScheduler_Worker-8] ERROR org.quartz.core.ErrorLogger  - Job (preliminarGroup1.preliminar1 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Long.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+50860 [DefaultQuartzScheduler_Worker-9] ERROR org.quartz.core.JobRunShell  - Job preliminarGroup0.preliminar0 threw an unhandled Exception: 
+java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+50861 [DefaultQuartzScheduler_Worker-9] ERROR org.quartz.core.ErrorLogger  - Job (preliminarGroup0.preliminar0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Long.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+56866 [DefaultQuartzScheduler_Worker-10] ERROR org.quartz.core.JobRunShell  - Job preliminarGroup1.preliminar1 threw an unhandled Exception: 
+java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+56867 [DefaultQuartzScheduler_Worker-10] ERROR org.quartz.core.ErrorLogger  - Job (preliminarGroup1.preliminar1 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Long.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+67860 [DefaultQuartzScheduler_Worker-2] ERROR org.quartz.core.JobRunShell  - Job preliminarGroup0.preliminar0 threw an unhandled Exception: 
+java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+67861 [DefaultQuartzScheduler_Worker-2] ERROR org.quartz.core.ErrorLogger  - Job (preliminarGroup0.preliminar0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Long.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+4    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+31   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+32   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+33   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+34   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+34   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+34   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+34   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+39985 [DefaultQuartzScheduler_Worker-1] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+39986 [DefaultQuartzScheduler_Worker-2] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+39994 [DefaultQuartzScheduler_Worker-3] ERROR org.quartz.core.JobRunShell  - Job preliminarGroup0.preliminar0 threw an unhandled Exception: 
+java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+39995 [DefaultQuartzScheduler_Worker-8] ERROR org.quartz.core.JobRunShell  - Job preliminarGroup1.preliminar1 threw an unhandled Exception: 
+java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+39995 [DefaultQuartzScheduler_Worker-5] ERROR org.quartz.core.JobRunShell  - Job preliminarGroup0.preliminar0 threw an unhandled Exception: 
+java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+39995 [DefaultQuartzScheduler_Worker-6] ERROR org.quartz.core.JobRunShell  - Job preliminarGroup1.preliminar1 threw an unhandled Exception: 
+java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+39995 [DefaultQuartzScheduler_Worker-4] ERROR org.quartz.core.JobRunShell  - Job preliminarGroup1.preliminar1 threw an unhandled Exception: 
+java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+39994 [DefaultQuartzScheduler_Worker-7] ERROR org.quartz.core.JobRunShell  - Job preliminarGroup0.preliminar0 threw an unhandled Exception: 
+java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+40000 [DefaultQuartzScheduler_Worker-4] ERROR org.quartz.core.ErrorLogger  - Job (preliminarGroup1.preliminar1 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Long.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+40000 [DefaultQuartzScheduler_Worker-6] ERROR org.quartz.core.ErrorLogger  - Job (preliminarGroup1.preliminar1 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Long.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+40000 [DefaultQuartzScheduler_Worker-5] ERROR org.quartz.core.ErrorLogger  - Job (preliminarGroup0.preliminar0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Long.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+39999 [DefaultQuartzScheduler_Worker-8] ERROR org.quartz.core.ErrorLogger  - Job (preliminarGroup1.preliminar1 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Long.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+39999 [DefaultQuartzScheduler_Worker-3] ERROR org.quartz.core.ErrorLogger  - Job (preliminarGroup0.preliminar0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Long.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+40001 [DefaultQuartzScheduler_Worker-7] ERROR org.quartz.core.ErrorLogger  - Job (preliminarGroup0.preliminar0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Long.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+50879 [DefaultQuartzScheduler_Worker-9] ERROR org.quartz.core.JobRunShell  - Job preliminarGroup0.preliminar0 threw an unhandled Exception: 
+java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+50879 [DefaultQuartzScheduler_Worker-9] ERROR org.quartz.core.ErrorLogger  - Job (preliminarGroup0.preliminar0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Long.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+56883 [DefaultQuartzScheduler_Worker-10] ERROR org.quartz.core.JobRunShell  - Job preliminarGroup1.preliminar1 threw an unhandled Exception: 
+java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+56883 [DefaultQuartzScheduler_Worker-10] ERROR org.quartz.core.ErrorLogger  - Job (preliminarGroup1.preliminar1 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Long.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+67878 [DefaultQuartzScheduler_Worker-1] ERROR org.quartz.core.JobRunShell  - Job preliminarGroup0.preliminar0 threw an unhandled Exception: 
+java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+67878 [DefaultQuartzScheduler_Worker-1] ERROR org.quartz.core.ErrorLogger  - Job (preliminarGroup0.preliminar0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Long.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+75881 [DefaultQuartzScheduler_Worker-2] ERROR org.quartz.core.JobRunShell  - Job preliminarGroup1.preliminar1 threw an unhandled Exception: 
+java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+75882 [DefaultQuartzScheduler_Worker-2] ERROR org.quartz.core.ErrorLogger  - Job (preliminarGroup1.preliminar1 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Long.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+84878 [DefaultQuartzScheduler_Worker-4] ERROR org.quartz.core.JobRunShell  - Job preliminarGroup0.preliminar0 threw an unhandled Exception: 
+java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+84878 [DefaultQuartzScheduler_Worker-4] ERROR org.quartz.core.ErrorLogger  - Job (preliminarGroup0.preliminar0 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Long.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Long.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getLong(StringKeyDirtyFlagMap.java:280)
+	at Get_url.execute(Get_url.java:35)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+5    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+31   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+32   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+33   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+34   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+34   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+34   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+34   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+6    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+19   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+20   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+21   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+21   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+21   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+21   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+22   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+24816 [DefaultQuartzScheduler_Worker-1] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+24818 [DefaultQuartzScheduler_Worker-2] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+24853 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 16:42:00 CEST 2016
+24854 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 16:42:00 CEST 2016
+24949 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:42:00 CEST 2016
+24949 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:42:00 CEST 2016
+33965 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:42:09 CEST 2016
+37886 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 16:42:13 CEST 2016
+1    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+4    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+25   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+27   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+29   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+29   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+29   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+30   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+30   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+28151 [DefaultQuartzScheduler_Worker-1] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+28153 [DefaultQuartzScheduler_Worker-2] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+28284 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:43:00 CEST 2016
+28284 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:43:00 CEST 2016
+33985 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:43:05 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+8    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+27   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+28   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+30   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+32   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+32   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+32   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+50976 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:43:22 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+5    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+23   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+26   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+28   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+28   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+28   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+28   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+29   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+30452 [DefaultQuartzScheduler_Worker-1] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+30453 [DefaultQuartzScheduler_Worker-2] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+30494 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 16:44:00 CEST 2016
+30494 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 16:44:00 CEST 2016
+30572 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:44:00 CEST 2016
+30590 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:44:00 CEST 2016
+34106 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:44:03 CEST 2016
+37884 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 16:44:07 CEST 2016
+51043 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:44:20 CEST 2016
+56886 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 16:44:26 CEST 2016
+67999 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:44:37 CEST 2016
+76269 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 16:44:45 CEST 2016
+84994 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:44:54 CEST 2016
+94889 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 16:45:04 CEST 2016
+101969 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:45:11 CEST 2016
+113885 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 16:45:23 CEST 2016
+118993 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:45:28 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+6    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+24   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+25   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+26   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+27   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+27   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+27   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+27   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+3123 [DefaultQuartzScheduler_Worker-1] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+3127 [DefaultQuartzScheduler_Worker-2] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+3172 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 16:46:00 CEST 2016
+3345 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:46:00 CEST 2016
+16962 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:46:13 CEST 2016
+18878 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 16:46:15 CEST 2016
+33962 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:46:30 CEST 2016
+37884 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 16:46:34 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+4    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+26   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+27   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+29   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+30   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+30   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+30   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+30   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+8180 [DefaultQuartzScheduler_Worker-1] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+8183 [DefaultQuartzScheduler_Worker-2] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+8230 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 16:48:00 CEST 2016
+8344 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:48:00 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+4    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+25   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+26   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+28   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+31   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+31   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+31   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+32   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+42808 [DefaultQuartzScheduler_Worker-1] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+42810 [DefaultQuartzScheduler_Worker-2] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+42857 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 16:51:00 CEST 2016
+42859 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 16:51:00 CEST 2016
+42876 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 16:51:00 CEST 2016
+42939 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:51:00 CEST 2016
+42948 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:51:00 CEST 2016
+42993 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:51:00 CEST 2016
+51039 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:51:08 CEST 2016
+56863 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 16:51:14 CEST 2016
+67975 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:51:25 CEST 2016
+75865 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 16:51:33 CEST 2016
+84975 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:51:42 CEST 2016

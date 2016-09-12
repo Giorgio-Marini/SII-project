@@ -1,4 +1,5 @@
 
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -49,88 +50,131 @@ public class Test_quartz{
 	}
 	
 	
-	public static boolean check_row_file( String urlFileName, String timingFileName) throws IOException, InterruptedException
+	public static void check_numb_rows_files( String urlFileName, 
+										 String timingFileName,
+										 String userAgentFileName) throws IOException, InterruptedException
 	{
 		int num_row_url_file = 0,
-			num_row_timing_file = 0;
+			num_row_timing_file = 0,
+			num_row_userAgent_file = 0;
 		
 		num_row_url_file = count_row_file( urlFileName );
 		
 		num_row_timing_file = count_row_file( timingFileName );
+
+		num_row_userAgent_file = count_row_file( userAgentFileName );		
 		
-		if ( num_row_url_file == num_row_timing_file )
-			return false;
-		else
-			return true;
+		if ( !(( num_row_url_file == num_row_timing_file ) && 
+			   ( num_row_timing_file == num_row_userAgent_file )))
+		{
+			System.out.println("[ERROR] the file haven't got the same size!");
+			System.exit(1);
+		}
 	}
 	
-	//read config file of the url and timing
-	public static boolean readConfigFile(String configPath) throws IOException, InterruptedException{
-		
+	
+	private static ArrayList<String> read_filename(String configPath) throws IOException, InterruptedException
+	{
+		ArrayList<String> list_config_file = new ArrayList<String>();
+
 		FileReader readerConfig = new FileReader(configPath);
 		Scanner scanner = new Scanner(readerConfig);
-		
-		String urlFileName = "";
-		String timingFileName = "";
-		
-		try
+	
+		while( scanner.hasNextLine() )
 		{
-			urlFileName = scanner.nextLine();		
+			list_config_file.add(scanner.nextLine());
 		}
-		catch( NoSuchElementException e)
-		{
-			System.out.println("[WARNING] The config file is empty!");
-			scanner.close();
-			return true;			
-		}
-
-		try
-		{
-			timingFileName = scanner.nextLine();		
-		}
-		catch( NoSuchElementException e)
-		{
-			System.out.println("Error missed configuration time file");
-			scanner.close();
-			return true;			
-		}		
 		
 		scanner.close();
 		
-		boolean error_config_file = false;
+		return list_config_file;
+	}
+	
+	private static ArrayList<String> check_config_file(String configPath) throws IOException, InterruptedException
+	{
+		ArrayList<String> list_config_file = new ArrayList<String>();
 		
-		error_config_file = check_row_file(urlFileName, timingFileName);
+		list_config_file = read_filename(configPath);
 		
-		if ( error_config_file )
-		{	
-			System.out.println("[WARNING] The URL file and the timing file haven't got the same size");
-			return true;
+		if ( list_config_file.size() != 3 )
+		{
+			System.out.println("[ERROR] The config file hasn't got the path of all files to run the application! ");
+			System.exit(1);
 		}
-			
-		FileReader readerTimining = new FileReader(timingFileName);
-		FileReader readerUrl = new FileReader(urlFileName);
-		Scanner scannerUrl = new Scanner(readerUrl);
-		Scanner scannerTime = new Scanner(readerTimining);
+		
+		return list_config_file;
+	}
+	
+	private static void create_request_job( String urlFileName, 
+			 								String timingFileName,
+			 								String userAgentFileName ) throws InterruptedException, FileNotFoundException
+	{
+		FileReader readerUrl       = new FileReader(urlFileName);
+		FileReader readerTimining  = new FileReader(timingFileName);
+		FileReader readerUserAgent = new FileReader(userAgentFileName); 
+		
+		Scanner scannerUrl         = new Scanner(readerUrl);
+		Scanner scannerTime 	   = new Scanner(readerTimining);
+		Scanner scannerUserAgent   = new Scanner(readerUserAgent); 
+		
+								/*
+								 *  jump the header of the three files because 
+								 *  	it contains the description of the contents
+								 */
 		scannerTime.nextLine();
 		scannerUrl.nextLine();		
-			
+		scannerUserAgent.nextLine();
+		
 			//scanner of url and timing
 		while(scannerTime.hasNextLine()){
 				urlDependency urlD = new urlDependency();
 				String timing = scannerTime.nextLine();
 				String own_url = scannerUrl.nextLine();
+				String userAgent = scannerUserAgent.nextLine();
+				
 				urlD.setUrl(own_url);
+				
 				System.out.println(urlD.getUrl());
+				
 				urlD.setValue(timing);
 				System.out.println("this is the cron Expression:: "+ urlD.getCronExpression());
+				
+				urlD.setUser_agent(userAgent);
+				
+				System.out.println("[useragent] "+urlD.getUser_agent());
+				
 				connectUrl.add(urlD);
 			}
 			
 		scannerUrl.close();
 		scannerTime.close();
+		scannerUserAgent.close();
+	}
+	
+	
+	//read config file of the url and timing
+	public static void readConfigFile(String configPath) throws IOException, InterruptedException{
 		
-		return false;
-	};
+		ArrayList<String> list_config_file = new ArrayList<String>();
+		
+		String path_url_filename = "",
+			   path_timing_filename = "",
+			   path_userAgent_filename = "";
+		
+		list_config_file = check_config_file(configPath);
+		
+		path_url_filename 		= list_config_file.get(0);
+		path_timing_filename 	= list_config_file.get(1);
+		path_userAgent_filename = list_config_file.get(2);		
+		
+		check_numb_rows_files(path_url_filename, 
+						 path_timing_filename,
+						 path_userAgent_filename);
+		
+		create_request_job( path_url_filename, 
+							path_timing_filename,
+							path_userAgent_filename );
+	}
 	
 	
 	private static JobDetail config_job( int i )
@@ -142,16 +186,20 @@ public class Test_quartz{
 		if ( ( connectUrl.get(i).isSleep_mode() == 1 ) &&
 				 ( !urlDependency.checkValueFrequencySeconds(connectUrl.get(i).getFixed_frequency()))){				
 				
+				System.out.println(" ------> "+connectUrl.get(i).getUser_agent());
+			
 				job = JobBuilder.newJob(PreliminarJob.class).withIdentity("job"+i,"group"+i)
 										.usingJobData("url", connectUrl.get(i).getUrl())
 										.usingJobData("index", i)
 										.usingJobData("maxContact", connectUrl.get(i).getMax_contact())
+										.usingJobData("userAgent", connectUrl.get(i).getUser_agent())
 										.build();
 				
 				preliminarJob = JobBuilder.newJob(Get_url.class).withIdentity("preliminar"+i,"preliminarGroup"+i)
 										  .usingJobData("url", connectUrl.get(i).getUrl())
 										  .usingJobData("index", i)
 										  .usingJobData("maxContact", connectUrl.get(i).getMax_contact())
+										  .usingJobData("userAgent", connectUrl.get(i).getUser_agent())
 										  .build();
 				
 				groupPreliminarJob.add(preliminarJob); 
@@ -179,7 +227,7 @@ public class Test_quartz{
 		if(connectUrl.get(i).isSleep_mode() == 1)
 		{
 			trg =TriggerBuilder.newTrigger().withIdentity("cronT" + i, "group"+ i)
-					.withSchedule(CronScheduleBuilder.cronSchedule("0 16 12 * * ?"/*(connectUrl.get(i)).getCronExpression()*/))
+					.withSchedule(CronScheduleBuilder.cronSchedule("0 51 16 * * ?"/*(connectUrl.get(i)).getCronExpression()*/))
 					.build();
 			
 			preliminarTrg = TriggerBuilder.newTrigger().withIdentity("simple"+i,"group" +i)
@@ -202,6 +250,8 @@ public class Test_quartz{
 	public static void settingJobTrigger(){
 		int i = 0;
 
+			System.out.println("[ TOT URL ] "+connectUrl.size());
+		
 			while(i < connectUrl.size()){
 											/*
 											 * Set up the job
@@ -236,15 +286,11 @@ public class Test_quartz{
 	public static void main(String[] args) throws Exception{
 		System.out.println("OUR BOT IS STARTING");
 		
-		boolean error_config_file = false;
+		readConfigFile("config.txt");
 		
-		error_config_file = readConfigFile("config.txt");
-		
-		if( !error_config_file )
-		{
-			settingJobTrigger();
-			runJob();
-		}
+		settingJobTrigger();
+			
+		runJob();
 	}
 
 }

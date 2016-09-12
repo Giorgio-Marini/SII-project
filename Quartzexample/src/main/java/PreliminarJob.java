@@ -49,11 +49,7 @@ public class PreliminarJob implements Job {
 		JobDataMap dataMap = context.getJobDetail().getJobDataMap();
 		int index = dataMap.getIntValue("index");
 		
-		//System.out.println("[index preliminar job] "+index);
-		
 		index = Test_quartz.indexGroupJob.indexOf(index);
-
-		//System.out.println("[real index preliminar job] "+index);
 		
 		try {
 			schedulerB.scheduleJob( Test_quartz.groupPreliminarJob.get(index),

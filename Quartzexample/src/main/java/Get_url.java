@@ -26,19 +26,33 @@ public class Get_url implements Job{
 		try{
 			JobKey key = context.getJobDetail().getKey();
 			JobDataMap dataMap = context.getJobDetail().getJobDataMap();
+			
 			String urlpax = dataMap.getString("url");
+			String userAgent = dataMap.getString("userAgent");
+			
+			System.out.println(" ----> UA : "+userAgent);
+			
 			long maxContact = dataMap.getLong("maxContact");
 			Integer index = dataMap.getInt("index");
+			
 //			String urlpax = Test_quartz.connectUrl.get(index).getUrl();
 //			long maxContact = Test_quartz.connectUrl.get(index).getMax_contact();
 			Integer c = Test_quartz.maxC.get(index);
+			
 			if(c < maxContact){
 				Test_quartz.maxC.set(index,c = c + 1);
 				URL url  = new URL(urlpax);
 				HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+				
+				if( !userAgent.equals("default"))
+					connection.setRequestProperty("User-Agent", userAgent);
+				
 				Date date = new Date();
 				String x = date.toString();
 				int code  = connection.getResponseCode();
+				
+				//System.out.println( connection.getHeaderField("User-Agent") );
+				
 				if(code == HttpURLConnection.HTTP_OK){
 					System.out.println("url "+ urlpax +"status connection :: " + code+ " date:: " + date);
 					logger.info("{},{}",urlpax,date);
