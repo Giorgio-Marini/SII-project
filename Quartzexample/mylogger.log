@@ -2698,3 +2698,41 @@ Caused by: java.lang.ClassCastException: Identified object is not a Long.
 67975 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:51:25 CEST 2016
 75865 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 16:51:33 CEST 2016
 84975 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.google.it,Mon Sep 12 16:51:42 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+5    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+21   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+23   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+24   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+26   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+26   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+26   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+26   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+43728 [DefaultQuartzScheduler_Worker-1] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+43730 [DefaultQuartzScheduler_Worker-2] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+43765 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 17:09:00 CEST 2016
+43767 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 17:09:00 CEST 2016
+43770 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 17:09:00 CEST 2016
+43847 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Mon Sep 12 17:09:00 CEST 2016
+43850 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Mon Sep 12 17:09:00 CEST 2016
+43855 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Sep 12 17:09:00 CEST 2016
+51143 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Sep 12 17:09:07 CEST 2016
+57866 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 17:09:13 CEST 2016
+67954 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Mon Sep 12 17:09:24 CEST 2016
+75883 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 17:09:32 CEST 2016
+84956 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.google.it,Mon Sep 12 17:09:41 CEST 2016
+94873 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 17:09:51 CEST 2016
+101950 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.google.it,Mon Sep 12 17:09:58 CEST 2016
+113882 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 17:10:10 CEST 2016
+119958 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Mon Sep 12 17:10:15 CEST 2016
+132879 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 17:10:29 CEST 2016
+135956 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Mon Sep 12 17:10:32 CEST 2016
+151878 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 17:10:48 CEST 2016
+152960 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Mon Sep 12 17:10:49 CEST 2016
+170945 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 17:11:07 CEST 2016

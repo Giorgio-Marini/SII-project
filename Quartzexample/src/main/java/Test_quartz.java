@@ -109,13 +109,9 @@ public class Test_quartz{
 			 								String timingFileName,
 			 								String userAgentFileName ) throws InterruptedException, FileNotFoundException
 	{
-		FileReader readerUrl       = new FileReader(urlFileName);
-		FileReader readerTimining  = new FileReader(timingFileName);
-		FileReader readerUserAgent = new FileReader(userAgentFileName); 
-		
-		Scanner scannerUrl         = new Scanner(readerUrl);
-		Scanner scannerTime 	   = new Scanner(readerTimining);
-		Scanner scannerUserAgent   = new Scanner(readerUserAgent); 
+		Scanner scannerUrl         = new Scanner( new FileReader(urlFileName) );
+		Scanner scannerTime 	   = new Scanner( new FileReader(timingFileName));
+		Scanner scannerUserAgent   = new Scanner( new FileReader(userAgentFileName)); 
 		
 								/*
 								 *  jump the header of the three files because 
@@ -227,7 +223,7 @@ public class Test_quartz{
 		if(connectUrl.get(i).isSleep_mode() == 1)
 		{
 			trg =TriggerBuilder.newTrigger().withIdentity("cronT" + i, "group"+ i)
-					.withSchedule(CronScheduleBuilder.cronSchedule("0 51 16 * * ?"/*(connectUrl.get(i)).getCronExpression()*/))
+					.withSchedule(CronScheduleBuilder.cronSchedule("0 9 17 * * ?"/*(connectUrl.get(i)).getCronExpression()*/))
 					.build();
 			
 			preliminarTrg = TriggerBuilder.newTrigger().withIdentity("simple"+i,"group" +i)
