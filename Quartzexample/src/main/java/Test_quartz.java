@@ -80,6 +80,7 @@ public class Test_quartz{
 		catch( NoSuchElementException e)
 		{
 			System.out.println("[WARNING] The config file is empty!");
+			scanner.close();
 			return true;			
 		}
 
@@ -90,6 +91,7 @@ public class Test_quartz{
 		catch( NoSuchElementException e)
 		{
 			System.out.println("Error missed configuration time file");
+			scanner.close();
 			return true;			
 		}		
 		
@@ -122,9 +124,11 @@ public class Test_quartz{
 				urlD.setValue(timing);
 				System.out.println("this is the cron Expression:: "+ urlD.getCronExpression());
 				connectUrl.add(urlD);
-				//System.out.println("max contact = " + urlD.getMax_contact());
 			}
 			
+		scannerUrl.close();
+		scannerTime.close();
+		
 		return false;
 	};
 	
@@ -135,14 +139,8 @@ public class Test_quartz{
 	
 		System.out.println("OK FUNCTION config_job");
 		
-		//int c = i;
-		
 		if ( ( connectUrl.get(i).isSleep_mode() == 1 ) &&
-				 ( !urlDependency.checkValueFrequencySeconds(connectUrl.get(i).getFixed_frequency()))){
-				
-				System.out.println("- PJ -"+i);
-			
-				//c = c + 2;				
+				 ( !urlDependency.checkValueFrequencySeconds(connectUrl.get(i).getFixed_frequency()))){				
 				
 				job = JobBuilder.newJob(PreliminarJob.class).withIdentity("job"+i,"group"+i)
 										.usingJobData("url", connectUrl.get(i).getUrl())
@@ -159,20 +157,7 @@ public class Test_quartz{
 				groupPreliminarJob.add(preliminarJob); 
 						
 				indexGroupJob.add(i);
-				//groupPreliminarJob.get()
 				
-				System.out.println("GPJ index - "+groupPreliminarJob.indexOf(preliminarJob));
-				
-				//System.out.println("["+(i+1)+"] "+groupPreliminarJob.get(i).getDescription());
-				
-				/*job2 = JobBuilder.newJob(Get_url.class).withIdentity("job"+i,"group"+i)
-						.usingJobData("url", connectUrl.get(i).getUrl())
-						.usingJobData("index", i)
-						.usingJobData("maxContact", connectUrl.get(i).getMax_contact())
-						.build();
-					
-				  add job2 into a preliminar job array list idem the trigger
-				*/
 				System.out.println("[PRELIMINAR JOB CREATED]");
 			}
 			else{
@@ -191,12 +176,10 @@ public class Test_quartz{
 	{
 		Trigger trg, preliminarTrg;
 		
-		System.out.println("OK FUNCTION config_trigger");
-		
 		if(connectUrl.get(i).isSleep_mode() == 1)
 		{
 			trg =TriggerBuilder.newTrigger().withIdentity("cronT" + i, "group"+ i)
-					.withSchedule(CronScheduleBuilder.cronSchedule("0 59 10 * * ?"/*(connectUrl.get(i)).getCronExpression()*/))
+					.withSchedule(CronScheduleBuilder.cronSchedule("0 16 12 * * ?"/*(connectUrl.get(i)).getCronExpression()*/))
 					.build();
 			
 			preliminarTrg = TriggerBuilder.newTrigger().withIdentity("simple"+i,"group" +i)
@@ -220,8 +203,6 @@ public class Test_quartz{
 		int i = 0;
 
 			while(i < connectUrl.size()){
-				
-				System.out.println("- JOB -"+i);
 											/*
 											 * Set up the job
 											 * 
@@ -234,56 +215,11 @@ public class Test_quartz{
 											 */
 				Trigger trigger = config_trigger(i);
 				
-				/*if ( ( connectUrl.get(i).isSleep_mode() == 1 ) &&
-					 ( !urlDependency.checkValueFrequencySeconds(connectUrl.get(i).getFixed_frequency()))){
-					job = JobBuilder.newJob(PreliminarJob.class).withIdentity("job"+i,"group"+i)
-											.usingJobData("url", connectUrl.get(i).getUrl())
-											.usingJobData("index", i)
-											.usingJobData("maxContact", connectUrl.get(i).getMax_contact())
-											.build();
-					
-					/*job2 = JobBuilder.newJob(Get_url.class).withIdentity("job"+i,"group"+i)
-							.usingJobData("url", connectUrl.get(i).getUrl())
-							.usingJobData("index", i)
-							.usingJobData("maxContact", connectUrl.get(i).getMax_contact())
-							.build();
-						
-					  add job2 into a preliminar job array list idem the trigger
-					*/
-					/*System.out.println("[PRELIMINAR JOB CREATED]");
-				}
-				else{
-					job = JobBuilder.newJob(Get_url.class).withIdentity("job"+i, "group"+i)
-						.usingJobData("url", connectUrl.get(i).getUrl())
-						.usingJobData("index", i)
-						.usingJobData("maxContact", connectUrl.get(i).getMax_contact())
-						.build();
-				}*/
-					
-											/*
-											 * Set up trigger
-											 */
-				/*Trigger trigger;
-				System.out.println("sleep mode :" + connectUrl.get(i).isSleep_mode() );
-					
-					
-				if(connectUrl.get(i).isSleep_mode() == 1)
-				{
-					trigger =TriggerBuilder.newTrigger().withIdentity("cronT" + i, "group"+ i)
-							.withSchedule(CronScheduleBuilder.cronSchedule("0 56 16 * * ?"/*(connectUrl.get(i)).getCronExpression()*///))
-					/*		.build();
-					}
-				else{
-					trigger = TriggerBuilder.newTrigger().withIdentity("simple"+i,"group" + i)
-						.withSchedule(SimpleScheduleBuilder.simpleSchedule().withIntervalInSeconds(connectUrl.get(i).getFixed_frequency()).repeatForever())
-						.build();
-					}*/
 				maxC.add(0);
 				groupJob.add(job);
 				groupTrigger.add(trigger);
 				i++;
 			}
-			System.out.println(groupPreliminarJob.size());
 	}
 	
 	//schedule job
