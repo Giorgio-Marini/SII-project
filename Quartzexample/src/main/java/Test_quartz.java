@@ -19,22 +19,9 @@ public class Test_quartz{
 	public static ArrayList<Trigger> groupPreliminarTrigger = new ArrayList<Trigger>();
 	public static ArrayList<Integer> indexGroupJob = new ArrayList<Integer>();
 	
-	public static int extract_random_int( int min_interval, int max_interval )
-	{
-		return ThreadLocalRandom.current().nextInt(min_interval, max_interval + 1);
-	}
-	
 	public static int extract_int_range_minute( int min_interval, int max_interval ) throws InterruptedException
 	{
-		int random_int = 0;
-		
-		/*do
-		{*/
-			random_int = extract_random_int( min_interval, max_interval );
-		/*}
-		while( 60 % random_int != 0 );*/
-		
-		return random_int;
+		return ThreadLocalRandom.current().nextInt(min_interval, max_interval + 1);
 	}
 	
 	
