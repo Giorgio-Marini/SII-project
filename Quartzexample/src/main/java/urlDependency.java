@@ -1,3 +1,4 @@
+
 import java.time.DayOfWeek;
 import java.util.ArrayList;
 
@@ -12,11 +13,27 @@ public class urlDependency {
 	private int sleep_mode;
 	private String interval_hour;
 	private String interval_day;
+	private int hour_start;
+	private int hour_stop;
 	private int frequency;
 	private String CronExpression;
 	public int isFrequency() {
 		return frequency;
 	}
+	
+	public int getHour_start() {
+		return hour_start;
+	}
+	public void setHour_start(int hour_start) {
+		this.hour_start = hour_start;
+	}
+	public int getHour_stop() {
+		return hour_stop;
+	}
+	public void setHour_stop(int hour_stop) {
+		this.hour_stop = hour_stop;
+	}
+	
 	public void setFrequency(int frequency) {
 		this.frequency = frequency;
 	}
@@ -88,7 +105,7 @@ public class urlDependency {
 		this.interval_day = interval_day;
 		this.frequency = frequency;
 	};
-	public void setValue(String timing){
+	public void setValue(String timing) throws InterruptedException{
 		//System.out.println(timing);
 		String [] splits = timing.split(" ");
 		frequency = Integer.parseInt(splits[0]);
@@ -105,51 +122,94 @@ public class urlDependency {
 		}else System.out.println("data is not valid!");
 		
 	}
+	
 	private boolean checkdate(){
 		return true;
 	};
-	private void calculateCronExpression(){
+	
+	private void calculateCronExpression() throws InterruptedException{
 		String fs = null, fm= null, fo = null, dayofmonth = null, month = null, dayofweek = null;
 		//System.out.println(sleep_mode);
-		if(frequency == 0){
-			if(fixed_frequency > 0 && fixed_frequency < 60){
-				fs = "0/"+fixed_frequency;
-				fm = "*";
-			}else if(fixed_frequency >59 && fixed_frequency<3600){
-				fm = ""+fixed_frequency/60;
-				fs = ""+fixed_frequency%60;
+		
+					/* random integer in a interval */
+		if ( frequency == 1)
+		{
+			fixed_frequency = Test_quartz.extract_int_range_minute(min_interval_random, max_interval_random);
+		}
+		
+		if(fixed_frequency > 0 && fixed_frequency < 60){
+			fs = "0/"+fixed_frequency;
+			fm = "*";
+		}else if(fixed_frequency >59 && fixed_frequency<3600){
+			fm = ""+fixed_frequency/60;
+			fs = ""+fixed_frequency%60;
 			}else if(fixed_frequency == 0){
 				fs = "*";
 			}
-		}else{
-			System.out.println("random");
-		}
-		if(sleep_mode == 1){
-			fo = calcintervalTask();
-			month= "*";
-			dayofweek = calcTaskDay();
-			if(!dayofweek.equals("*") || !dayofweek.equals("0")){
-				dayofmonth = "?";
-			}else dayofmonth = "*";
+	
+		if(sleep_mode == 1)
+		{
+						/*
+						 * the fixed frequency IS DIVISIBLE for 60
+						 */
+			if ( checkValueFrequencySeconds(fixed_frequency)){
+				fo = calcintervalTask();
+				month= "*";
+				dayofweek = calcTaskDay();
+				if(!dayofweek.equals("*") || !dayofweek.equals("0")){
+					dayofmonth = "?";
+				}else dayofmonth = "*";
+			}
+						/*
+						 * the fixed frequency IS NOT DIVISIBLE for 60 
+						 */
+			else{
+				fs = "0";
+				fm = "0";
+				fo = ""+hour_start;
+				dayofmonth = "*";
+				month = "*";
+				dayofweek = "?";
+			}
 		}else if (sleep_mode == 0){
 			fo = "*";
 			dayofmonth = "*";
 			month = "*";
 			dayofweek = "*";
-		
 		}
 		
 		CronExpression = fs+" "+fm+" "+ fo +" "+dayofmonth+" "+month+" "+dayofweek;
 		//System.out.println(CronExpression);
 	};
 	
+	
+												/*
+												 *  Check if the value of frequency ( expressed in seconds ) 
+												 *  
+												 *  	is divisible for 60 ( 1, 2, 3, ...  it returns a true value )
+												 *  
+												 * 		or not ( 17, ... it returns a false value ).
+												 *
+												 */
+	public static boolean checkValueFrequencySeconds( int value )
+	{
+		if ( 60 % value == 0 )
+			return true;
+		else
+			return false;
+	}
+	
 	private String calcintervalTask(){
 		String split[] = interval_hour.split("-");
 		String result = null;
+		
 		if(split.length > 1){
+			
 			int x1 = Integer.parseInt(split[0]);
-			int x2 = Integer.parseInt(split[1]);
+			int x2 = Integer.parseInt(split[1]);		
+			
 			int tmp;
+			
 			if(x1 == 0 && x2!=23){
 				x1=x2+1;
 				x2 =23;
@@ -162,15 +222,24 @@ public class urlDependency {
 				x1=0;
 				x2 = tmp - 1;
 			}
+			
+			hour_start = x1;
+			hour_stop = x2;
+			
 			result = x1+"-"+x2;
 			//System.out.println(result);
 		}else if(split[0].equals("AM")){
 			result = "12-23";
+			hour_start = 12;
+			hour_stop = 0;
 			//System.out.println(result);
 		}else if(split[0].equals("PM")){
 			result = "0-11";
+			hour_start = 0;
+			hour_stop = 12;
 			//System.out.println(result);
 		}
+		
 		return result;
 	}
 	private String calcTaskDay(){
@@ -205,16 +274,6 @@ public class urlDependency {
 		//System.out.println(log);
 		return log;
 		
-	}
-
-
-	
-	
-
-	
-	
-	
-	
-	
+	}	
 
 }

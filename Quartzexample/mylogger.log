@@ -1498,3 +1498,28 @@ Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to jav
 215  [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Fri Sep 09 10:42:27 CEST 2016
 1887 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,Fri Sep 09 10:42:28 CEST 2016
 2972 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.uniroma2.it,Fri Sep 09 10:42:30 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+11   [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+43   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+45   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+48   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+50   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+51   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+51   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+51   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+266  [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Fri Sep 09 10:49:51 CEST 2016
+1787 [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,Fri Sep 09 10:49:53 CEST 2016
+3474 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.uniroma2.it,Fri Sep 09 10:49:55 CEST 2016
+3773 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.google.it,Fri Sep 09 10:49:55 CEST 2016
+5824 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Fri Sep 09 10:49:57 CEST 2016
+8471 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.uniroma2.it,Fri Sep 09 10:50:00 CEST 2016
+9787 [DefaultQuartzScheduler_Worker-8] INFO  Get_url  - http://www.google.it,Fri Sep 09 10:50:01 CEST 2016
+10781 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.google.it,Fri Sep 09 10:49:59 CEST 2016
+11816 [DefaultQuartzScheduler_Worker-9] INFO  Get_url  - http://www.google.it,Fri Sep 09 10:50:03 CEST 2016
