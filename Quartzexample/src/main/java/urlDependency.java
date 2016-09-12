@@ -1,6 +1,11 @@
 
 import java.time.DayOfWeek;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
+
+import org.joda.time.DateTime;
+import org.joda.time.Hours;
 
 
 public class urlDependency {
@@ -165,8 +170,15 @@ public class urlDependency {
 						 * the fixed frequency IS NOT DIVISIBLE for 60 
 						 */
 			else{
+				calcintervalTask();
+				
+				DateTime d = new DateTime();
+				
+				d = d.plusMinutes(1);				
+				//System.out.println(d.toString("mm"));
+				
 				fs = "0";
-				fm = "0";
+				fm = ""+d.toString("mm");
 				fo = ""+hour_start;
 				dayofmonth = "*";
 				month = "*";

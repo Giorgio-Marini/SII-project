@@ -8,6 +8,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Date;
 
+import org.joda.time.DateTime;
 import org.quartz.Job;
 import org.quartz.JobDataMap;
 import org.quartz.JobExecutionContext;
@@ -41,12 +42,12 @@ public class Get_url implements Job{
 				if( !userAgent.equals("default"))
 					connection.setRequestProperty("User-Agent", userAgent);
 				
-				Date date = new Date();
-				String x = date.toString();
+				DateTime date = new DateTime();
+				
 				int code  = connection.getResponseCode();
 				
 				if(code == HttpURLConnection.HTTP_OK){
-					System.out.println("url "+ urlpax +"status connection :: " + code+ " date:: " + date);
+					System.out.println("url "+ urlpax +"status connection :: " + code+ " date:: " + date.toString("dd-MM-yyyy HH:mm:ss"));
 					logger.info("{},{}",urlpax,date);
 					}
 			}

@@ -222,8 +222,10 @@ public class Test_quartz{
 		
 		if(connectUrl.get(i).isSleep_mode() == 1)
 		{
+			System.out.println(connectUrl.get(i).getCronExpression());
+			
 			trg =TriggerBuilder.newTrigger().withIdentity("cronT" + i, "group"+ i)
-					.withSchedule(CronScheduleBuilder.cronSchedule("0 38 17 * * ?"/*(connectUrl.get(i)).getCronExpression()*/))
+					.withSchedule(CronScheduleBuilder.cronSchedule(/*"0 31 22 * * ?"*/(connectUrl.get(i)).getCronExpression()))
 					.build();
 			
 			preliminarTrg = TriggerBuilder.newTrigger().withIdentity("simple"+i,"group" +i)
