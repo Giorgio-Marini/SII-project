@@ -2736,3 +2736,26 @@ Caused by: java.lang.ClassCastException: Identified object is not a Long.
 151878 [DefaultQuartzScheduler_Worker-10] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 17:10:48 CEST 2016
 152960 [DefaultQuartzScheduler_Worker-1] INFO  Get_url  - http://www.google.it,Mon Sep 12 17:10:49 CEST 2016
 170945 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 17:11:07 CEST 2016
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+4    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+19   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+21   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+22   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+24   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+24   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+24   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+24   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+53   [DefaultQuartzScheduler_Worker-1] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+55   [DefaultQuartzScheduler_Worker-2] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+119  [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 17:38:00 CEST 2016
+210  [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,Mon Sep 12 17:38:00 CEST 2016
+16980 [DefaultQuartzScheduler_Worker-5] INFO  Get_url  - http://www.google.it,Mon Sep 12 17:38:17 CEST 2016
+18889 [DefaultQuartzScheduler_Worker-6] INFO  Get_url  - http://www.uniroma2.it,Mon Sep 12 17:38:19 CEST 2016
+33991 [DefaultQuartzScheduler_Worker-7] INFO  Get_url  - http://www.google.it,Mon Sep 12 17:38:34 CEST 2016
