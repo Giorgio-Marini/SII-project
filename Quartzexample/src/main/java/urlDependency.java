@@ -1,12 +1,5 @@
 
-import java.time.DayOfWeek;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
-
 import org.joda.time.DateTime;
-import org.joda.time.Hours;
-
 
 public class urlDependency {
 	
@@ -112,26 +105,138 @@ public class urlDependency {
 		this.frequency = frequency;
 	};
 	public void setValue(String timing) throws InterruptedException{
-		//System.out.println(timing);
-		String [] splits = timing.split(" ");
-		frequency = Integer.parseInt(splits[0]);
-		fixed_frequency = Integer.parseInt(splits[1]);
-		max_interval_random = Integer.parseInt(splits[2]);
-		min_interval_random = Integer.parseInt(splits[3]);
-		max_contact = Integer.parseInt(splits[4]);
-		sleep_mode =Integer.parseInt(splits[5]);
-		interval_hour = splits[6];
-		interval_day = splits[7];
-		boolean validate = checkdate();
+		
+		boolean validate = checkdate( timing );
+		
 		if(validate){
 			calculateCronExpression();
-		}else System.out.println("data is not valid!");
+		}
+		else 
+		{
+			System.out.println("data is not valid!");
+			System.exit(1);
+		}
 		
 	}
 	
-	private boolean checkdate(){
-		return true;
-	};
+	private boolean checkdate( String timing )
+	{
+		boolean well_form_data = true;
+		
+		String [] splits = timing.split(" ");
+		
+		try
+		{
+			frequency = Integer.parseInt(splits[0]);
+		}
+		catch( NumberFormatException e )
+		{
+			System.out.println("[ERROR] The frequency mode in not an integer value!");
+			return false;
+		}
+		
+		if ( ( frequency != 0 ) && ( frequency != 1 ) )
+		{
+			System.out.println("[ERROR] The frequency mode is different from the 0 and 1 values!");
+			return false;
+		}
+		
+		try
+		{
+			fixed_frequency = Integer.parseInt(splits[1]);
+		}
+		catch( NumberFormatException e )
+		{
+			System.out.println("[ERROR] The frequency value in not an integer!");
+			return false;			
+		}
+		
+		if ( !( ( fixed_frequency > 0 ) && ( fixed_frequency < 60)) )
+		{
+			System.out.println("[ERROR] The frequency value is over the range [0:60] !");
+			return false;			
+		}
+		
+		if ( frequency == 1 )
+		{
+		
+			try
+			{
+				max_interval_random = Integer.parseInt(splits[2]);
+			}
+			catch( NumberFormatException e )
+			{
+				System.out.println("[ERROR] The frequency value in not an integer!");
+				return false;
+			}
+		
+			if ( !( ( max_interval_random > 0 ) && ( max_interval_random <= 60))  )
+			{
+				System.out.println("[ERROR] The max value of interval is over the range [0:60] !");
+				return false;
+			}
+		
+			try
+			{
+				min_interval_random = Integer.parseInt(splits[3]);
+			}
+			catch( NumberFormatException e )
+			{
+				System.out.println("[ERROR] The min value of interval is over the range [0:60] !");			
+				return false;
+			}
+			
+			if ( !( ( min_interval_random >= 0 ) && ( min_interval_random < 60))  )
+			{
+				System.out.println("[ERROR] The min value of interval is over the range [0:60] !");
+				return false;
+			}
+			
+			if ( min_interval_random > max_interval_random )
+			{
+				System.out.println("[ERROR] The min value of interval is greater than the max!");
+				return false;			
+			}
+		}
+		
+		try
+		{
+			max_contact = Integer.parseInt(splits[4]);
+		}
+		catch( NumberFormatException e )
+		{
+			System.out.println("[ERROR] The max_contact value is not an integer value !");
+			return false;	
+		}
+		
+		if ( !( ( max_contact > 0 ) && ( max_contact <= 50 )) )
+		{
+			System.out.println("[ERROR] The max_contact value is too large ( >50 ) or negative ( < 0 ) or zero ( == 0)!");
+			return false;			
+		}
+				
+		try
+		{
+			sleep_mode =Integer.parseInt(splits[5]);
+		}
+		catch( NumberFormatException e )
+		{
+			System.out.println("[ERROR] The sleep_mode value is not an integer!");
+			return false;			
+		}
+		
+		if ( !( ( sleep_mode == 0 ) || ( sleep_mode == 1 )) )
+		{
+			System.out.println("[ERROR] The sleep_mode value is different from the 0 and 1 values!");
+			return false;			
+		}
+		
+		interval_hour = splits[6];
+		
+		interval_day = splits[7];
+		
+		return well_form_data;
+	}
 	
 	private void calculateCronExpression() throws InterruptedException{
 		String fs = null, fm= null, fo = null, dayofmonth = null, month = null, dayofweek = null;
@@ -193,11 +298,12 @@ public class urlDependency {
 				month = "*";
 				dayofweek = "?";
 			}
-		}else if (sleep_mode == 0){
+		}else if (sleep_mode == 0)
+		{			
 			fo = "*";
 			dayofmonth = "*";
 			month = "*";
-			dayofweek = "*";
+			dayofweek = "?";
 		}
 		
 		CronExpression = fs+" "+fm+" "+ fo +" "+dayofmonth+" "+month+" "+dayofweek;
