@@ -170,24 +170,16 @@ public class urlDependency {
 						 * the fixed frequency IS NOT DIVISIBLE for 60 
 						 */
 			else{
-				String res = calcintervalTask();
-				
-				System.out.println(""+res);
-				System.out.println(""+hour_start);
-				System.out.println(""+hour_stop);
+				calcintervalTask();
 				
 				DateTime d = new DateTime();				
 				
 				int hour_now = Integer.parseInt(d.toString("HH"));
 				
-				fo="";
+				fo = hour_start+"-"+hour_stop;
 				
 				if ( ( hour_now < hour_stop ) || ( hour_now > hour_start ) )
-				{
-					fo += hour_now+"-"+hour_stop+",";
-					
-					d.plusSeconds(2);
-					
+				{						
 					fs = ""+d.toString("ss");
 					fm = ""+d.toString("mm");
 				}
@@ -196,8 +188,6 @@ public class urlDependency {
 					fs = "0";
 					fm = "0";
 				}
-				
-				fo += hour_start+"-"+hour_stop;
 				
 				dayofmonth = "*";
 				month = "*";
@@ -258,17 +248,17 @@ public class urlDependency {
 			hour_stop = x2;
 			
 			result = x1+"-"+x2;
-			//System.out.println(result);
+
 		}else if(split[0].equals("AM")){
 			result = "12-23";
 			hour_start = 12;
 			hour_stop = 0;
-			//System.out.println(result);
+
 		}else if(split[0].equals("PM")){
 			result = "0-11";
 			hour_start = 0;
 			hour_stop = 12;
-			//System.out.println(result);
+
 		}
 		
 		return result;
@@ -302,7 +292,7 @@ public class urlDependency {
 				log = log.substring(0, log.length()-1);
 			}
 		}
-		//System.out.println(log);
+
 		return log;
 		
 	}
