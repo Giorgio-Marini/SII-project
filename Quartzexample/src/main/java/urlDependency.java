@@ -170,16 +170,35 @@ public class urlDependency {
 						 * the fixed frequency IS NOT DIVISIBLE for 60 
 						 */
 			else{
-				calcintervalTask();
+				String res = calcintervalTask();
 				
-				DateTime d = new DateTime();
+				System.out.println(""+res);
+				System.out.println(""+hour_start);
+				System.out.println(""+hour_stop);
 				
-				d = d.plusMinutes(1);				
-				//System.out.println(d.toString("mm"));
+				DateTime d = new DateTime();				
 				
-				fs = "0";
-				fm = ""+d.toString("mm");
-				fo = ""+hour_start;
+				int hour_now = Integer.parseInt(d.toString("HH"));
+				
+				fo="";
+				
+				if ( ( hour_now < hour_stop ) || ( hour_now > hour_start ) )
+				{
+					fo += hour_now+"-"+hour_stop+",";
+					
+					d.plusSeconds(2);
+					
+					fs = ""+d.toString("ss");
+					fm = ""+d.toString("mm");
+				}
+				else
+				{
+					fs = "0";
+					fm = "0";
+				}
+				
+				fo += hour_start+"-"+hour_stop;
+				
 				dayofmonth = "*";
 				month = "*";
 				dayofweek = "?";
@@ -192,7 +211,6 @@ public class urlDependency {
 		}
 		
 		CronExpression = fs+" "+fm+" "+ fo +" "+dayofmonth+" "+month+" "+dayofweek;
-		//System.out.println(CronExpression);
 	};
 	
 	
