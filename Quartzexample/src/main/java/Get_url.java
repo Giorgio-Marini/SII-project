@@ -34,13 +34,18 @@ public class Get_url implements Job{
 			Integer index = dataMap.getInt("index");
 			Integer c = Test_quartz.maxC.get(index);
 			
+				/* German Proxy */
+			System.setProperty("http.proxyHost", "85.10.235.253");
+			System.setProperty("http.proxyPort", "8080");
+			
+			URL url  = new URL(urlpax);
+			HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+			
+			if( !userAgent.equals("default"))
+				connection.setRequestProperty("User-Agent", userAgent);
+			
 			if(c < maxContact){
 				Test_quartz.maxC.set(index,c = c + 1);
-				URL url  = new URL(urlpax);
-				HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-				
-				if( !userAgent.equals("default"))
-					connection.setRequestProperty("User-Agent", userAgent);
 				
 				DateTime date = new DateTime();
 				

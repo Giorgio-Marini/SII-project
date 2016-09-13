@@ -146,3 +146,43 @@
 57   [DefaultQuartzScheduler_Worker-1] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
 297  [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.google.it,2016-09-13T12:13:42.456+02:00
 17087 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.google.it,2016-09-13T12:13:59.245+02:00
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+6    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+23   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+24   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+26   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+27   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+27   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+27   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+27   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+51   [DefaultQuartzScheduler_Worker-1] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+268  [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.uniroma2.it,2016-09-13T18:27:09.190+02:00
+18980 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.uniroma2.it,2016-09-13T18:27:27.940+02:00
+37978 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.uniroma2.it,2016-09-13T18:27:46.940+02:00
+0    [main] INFO  org.quartz.impl.StdSchedulerFactory  - Using default implementation for ThreadExecutor
+7    [main] INFO  org.quartz.simpl.SimpleThreadPool  - Job execution threads will use class loader of thread: main
+25   [main] INFO  org.quartz.core.SchedulerSignalerImpl  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+28   [main] INFO  org.quartz.core.QuartzScheduler  - Quartz Scheduler v.2.2.1 created.
+29   [main] INFO  org.quartz.simpl.RAMJobStore  - RAMJobStore initialized.
+30   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+30   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+30   [main] INFO  org.quartz.impl.StdSchedulerFactory  - Quartz scheduler version: 2.2.1
+30   [main] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+45   [DefaultQuartzScheduler_Worker-1] INFO  org.quartz.core.QuartzScheduler  - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+294  [DefaultQuartzScheduler_Worker-2] INFO  Get_url  - http://www.uniroma2.it,2016-09-13T18:28:19.854+02:00
+18952 [DefaultQuartzScheduler_Worker-3] INFO  Get_url  - http://www.uniroma2.it,2016-09-13T18:28:38.646+02:00
+38090 [DefaultQuartzScheduler_Worker-4] INFO  Get_url  - http://www.uniroma2.it,2016-09-13T18:28:57.645+02:00
