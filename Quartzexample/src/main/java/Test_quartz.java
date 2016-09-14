@@ -53,11 +53,13 @@ public class Test_quartz{
 	
 	public static void check_numb_rows_files( String urlFileName, 
 										 String timingFileName,
-										 String userAgentFileName) throws IOException, InterruptedException
+										 String userAgentFileName,
+										 String proxyFileName) throws IOException, InterruptedException
 	{
 		int num_row_url_file = 0,
 			num_row_timing_file = 0,
-			num_row_userAgent_file = 0;
+			num_row_userAgent_file = 0,
+			num_row_proxy_file = 0;
 		
 		num_row_url_file = count_row_file( urlFileName );
 		
@@ -65,8 +67,13 @@ public class Test_quartz{
 
 		num_row_userAgent_file = count_row_file( userAgentFileName );		
 		
+		num_row_proxy_file = count_row_file( proxyFileName );
+		
+		System.out.println(proxyFileName+"  "+num_row_proxy_file);
+		
 		if ( !(( num_row_url_file == num_row_timing_file ) && 
-			   ( num_row_timing_file == num_row_userAgent_file )))
+			   ( num_row_timing_file == num_row_userAgent_file ) &&
+			   ( num_row_userAgent_file == num_row_proxy_file )))
 		{
 			System.out.println("[ERROR] the file haven't got the same size!");
 			System.exit(1);
@@ -97,7 +104,7 @@ public class Test_quartz{
 		
 		list_config_file = read_filename(configPath);
 		
-		if ( list_config_file.size() != 4 )
+		if ( list_config_file.size() != 5 )
 		{
 			System.out.println("[ERROR] The config file hasn't got the path of all files to run the application! ");
 			System.exit(1);
@@ -108,12 +115,13 @@ public class Test_quartz{
 	
 	private static void create_request_job( String urlFileName, 
 			 								String timingFileName,
-			 								String userAgentFileName ) throws InterruptedException, FileNotFoundException
+			 								String userAgentFileName,
+			 								String proxyFilename ) throws InterruptedException, FileNotFoundException
 	{
 		Scanner scannerUrl         = new Scanner( new FileReader(urlFileName) );
 		Scanner scannerTime 	   = new Scanner( new FileReader(timingFileName));
 		Scanner scannerUserAgent   = new Scanner( new FileReader(userAgentFileName)); 
-		
+		Scanner scannerProxy  	   = new Scanner( new FileReader(proxyFilename)); 		
 								/*
 								 *  jump the header of the three files because 
 								 *  	it contains the description of the contents
@@ -121,6 +129,7 @@ public class Test_quartz{
 		scannerTime.nextLine();
 		scannerUrl.nextLine();		
 		scannerUserAgent.nextLine();
+		scannerProxy.nextLine();
 		
 			//scanner of url and timing
 		while(scannerTime.hasNextLine()){
@@ -128,6 +137,14 @@ public class Test_quartz{
 				String timing = scannerTime.nextLine();
 				String own_url = scannerUrl.nextLine();
 				String userAgent = scannerUserAgent.nextLine();
+				
+				String [] public_proxy_address = scannerProxy.nextLine().split(" ");
+				
+				String proxy_ip = public_proxy_address[0];
+				String proxy_port = "";
+				
+				if ( !proxy_ip.equals("nope"))
+				 proxy_port = public_proxy_address[1];
 				
 				urlD.setUrl(own_url);
 				
@@ -139,7 +156,18 @@ public class Test_quartz{
 				urlD.setUser_agent(userAgent);
 				
 				System.out.println("[useragent] "+urlD.getUser_agent());
+				urlD.setProxy(proxy_ip);
+
+				System.out.println("[proxy] "+urlD.getProxy());				
+
+				if ( !proxy_ip.equals("nope"))
+				{
+					urlD.setProxy_port(proxy_port);
+
+					System.out.println("[proxy_port] "+urlD.getProxy_port());
+				}
 				
+					
 				connectUrl.add(urlD);
 			}
 			
@@ -167,7 +195,8 @@ public class Test_quartz{
 		String path_url_filename = "",
 			   path_timing_filename = "",
 			   path_userAgent_filename = "",
-			   path_info_system = "";
+			   path_info_system = "",
+			   path_proxy_filename = "";
 		
 		list_config_file = check_config_file(configPath);
 		
@@ -175,14 +204,19 @@ public class Test_quartz{
 		path_timing_filename 	= list_config_file.get(1);
 		path_userAgent_filename = list_config_file.get(2);		
 		path_info_system 		= list_config_file.get(3); 
+		path_proxy_filename		= list_config_file.get(4);
+		
+		System.out.println(path_proxy_filename);
 		
 		check_numb_rows_files(path_url_filename, 
 						 path_timing_filename,
-						 path_userAgent_filename);
+						 path_userAgent_filename,
+						 path_proxy_filename);
 		
 		create_request_job( path_url_filename, 
 							path_timing_filename,
-							path_userAgent_filename );
+							path_userAgent_filename,
+							path_proxy_filename );
 		
 		print_info_system( path_info_system );
 	}
@@ -204,6 +238,8 @@ public class Test_quartz{
 										.usingJobData("index", i)
 										.usingJobData("maxContact", connectUrl.get(i).getMax_contact())
 										.usingJobData("userAgent", connectUrl.get(i).getUser_agent())
+										.usingJobData("proxy", connectUrl.get(i).getProxy())
+										.usingJobData("proxy_port", connectUrl.get(i).getProxy_port())
 										.build();
 				
 				preliminarJob = JobBuilder.newJob(Get_url.class).withIdentity("preliminar"+i,"preliminarGroup"+i)
@@ -211,6 +247,8 @@ public class Test_quartz{
 										  .usingJobData("index", i)
 										  .usingJobData("maxContact", connectUrl.get(i).getMax_contact())
 										  .usingJobData("userAgent", connectUrl.get(i).getUser_agent())
+										  .usingJobData("proxy", connectUrl.get(i).getProxy())
+										  .usingJobData("proxy_port", connectUrl.get(i).getProxy_port())
 										  .build();
 				
 				groupPreliminarJob.add(preliminarJob); 
@@ -225,6 +263,8 @@ public class Test_quartz{
 					.usingJobData("index", i)
 					.usingJobData("maxContact", connectUrl.get(i).getMax_contact())
 					.usingJobData("userAgent", connectUrl.get(i).getUser_agent())
+					.usingJobData("proxy", connectUrl.get(i).getProxy())
+					.usingJobData("proxy_port", connectUrl.get(i).getProxy_port())
 					.build();
 			}
 		

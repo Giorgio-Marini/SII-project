@@ -15,6 +15,8 @@ public class urlDependency {
 	private int hour_stop;
 	private int frequency;
 	private String user_agent;
+	private String proxy = "";
+	private String proxy_port = "";
 	private String CronExpression;
 	public int isFrequency() {
 		return frequency;
@@ -138,7 +140,7 @@ public class urlDependency {
 		}
 		catch( NumberFormatException e )
 		{
-			System.out.println("[ERROR] The hour is not an integer value ( HH-HH )!");
+			System.out.println("[ERROR] The hour_start is not an integer value ( HH-HH )!");
 			System.exit(1);				
 		}
 
@@ -148,7 +150,7 @@ public class urlDependency {
 		}
 		catch( NumberFormatException e )
 		{
-			System.out.println("[ERROR] The hour is not an integer value ( HH-HH )!");
+			System.out.println("[ERROR] The hour_stop is not an integer value ( HH-HH )!");
 			System.exit(1);				
 		}			
 				
@@ -156,7 +158,7 @@ public class urlDependency {
 			 !( ( x2 >= 0 ) && ( x2 < 24 ) ))
 		{
 			System.out.println("OK");
-			System.out.println("[ERROR] The hour range is not valid ( HH-HH )!");
+			System.out.println("[ERROR] The hour range is not valid. It is over ( 0-24 )!");
 			System.exit(1);								
 		}
 	}
@@ -170,6 +172,9 @@ public class urlDependency {
 		}
 		else
 		{
+													/*
+													 *  Format: HH
+													 */			
 			if ( ( interval_hour.length() == 2 ) &&
 				 ( !( interval_hour.equals("AM") ) &&
 				   !( interval_hour.equals("PM") )))
@@ -502,6 +507,22 @@ public class urlDependency {
 
 	public void setUser_agent(String user_agent) {
 		this.user_agent = user_agent;
+	}
+
+	public String getProxy() {
+		return proxy;
+	}
+
+	public void setProxy(String proxy) {
+		this.proxy = proxy;
+	}
+
+	public String getProxy_port() {
+		return proxy_port;
+	}
+
+	public void setProxy_port(String proxy_port) {
+		this.proxy_port = proxy_port;
 	}	
 
 }

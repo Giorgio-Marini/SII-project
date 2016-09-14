@@ -2,3 +2,4 @@ URL_file.txt
 timing.txt
 user_agent.txt
 info_system.txt
+proxy.txt

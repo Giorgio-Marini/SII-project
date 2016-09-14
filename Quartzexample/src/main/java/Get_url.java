@@ -29,14 +29,18 @@ public class Get_url implements Job{
 			
 			String urlpax = dataMap.getString("url");
 			String userAgent = dataMap.getString("userAgent");
+			String proxy = dataMap.getString("proxy");
+			String proxy_port = dataMap.getString("proxy_port");
 			
 			long maxContact = dataMap.getLong("maxContact");
 			Integer index = dataMap.getInt("index");
 			Integer c = Test_quartz.maxC.get(index);
 			
-				/* German Proxy */
-			System.setProperty("http.proxyHost", "85.10.235.253");
-			System.setProperty("http.proxyPort", "8080");
+			if ( !( proxy.equals("nope") ) )
+			{
+				System.setProperty("http.proxyHost", proxy);
+				System.setProperty("http.proxyPort", proxy_port);			
+			}
 			
 			URL url  = new URL(urlpax);
 			HttpURLConnection connection = (HttpURLConnection) url.openConnection();
