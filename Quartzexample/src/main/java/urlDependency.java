@@ -284,7 +284,7 @@ public class urlDependency {
 				fo = hour_start+"-"+hour_stop;
 				
 				if ( ( hour_now < hour_stop ) || ( hour_now > hour_start ) )
-				{						
+				{							
 					fs = ""+d.toString("ss");
 					fm = ""+d.toString("mm");
 				}
@@ -296,14 +296,18 @@ public class urlDependency {
 				
 				dayofmonth = "*";
 				month = "*";
-				dayofweek = "?";
+				dayofweek = calcTaskDay();
+
+				if(!dayofweek.equals("*") || !dayofweek.equals("0")){
+					dayofmonth = "?";
+				}else dayofmonth = "*";		
 			}
 		}else if (sleep_mode == 0)
 		{			
 			fo = "*";
 			dayofmonth = "*";
 			month = "*";
-			dayofweek = "?";
+			dayofweek = "*";
 		}
 		
 		CronExpression = fs+" "+fm+" "+ fo +" "+dayofmonth+" "+month+" "+dayofweek;

@@ -209,6 +209,7 @@ public class Test_quartz{
 					.usingJobData("url", connectUrl.get(i).getUrl())
 					.usingJobData("index", i)
 					.usingJobData("maxContact", connectUrl.get(i).getMax_contact())
+					.usingJobData("userAgent", connectUrl.get(i).getUser_agent())
 					.build();
 			}
 		

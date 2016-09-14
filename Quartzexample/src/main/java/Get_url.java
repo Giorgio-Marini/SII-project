@@ -44,6 +44,7 @@ public class Get_url implements Job{
 			if( !userAgent.equals("default"))
 				connection.setRequestProperty("User-Agent", userAgent);
 			
+			
 			if(c < maxContact){
 				Test_quartz.maxC.set(index,c = c + 1);
 				
