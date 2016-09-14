@@ -243,21 +243,14 @@ public class urlDependency {
 		//System.out.println(sleep_mode);
 		
 					/* random integer in a interval */
-		if ( frequency == 1)
+		if ( frequency == 1 )
 		{
 			fixed_frequency = Test_quartz.extract_int_range_minute(min_interval_random, max_interval_random);
 		}
+
+		fs = "0/"+fixed_frequency;
+		fm = "*";
 		
-		if(fixed_frequency > 0 && fixed_frequency < 60){
-			fs = "0/"+fixed_frequency;
-			fm = "*";
-		}else if(fixed_frequency >59 && fixed_frequency<3600){
-			fm = ""+fixed_frequency/60;
-			fs = ""+fixed_frequency%60;
-			}else if(fixed_frequency == 0){
-				fs = "*";
-			}
-	
 		if(sleep_mode == 1)
 		{
 						/*
