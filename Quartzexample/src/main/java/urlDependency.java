@@ -119,6 +119,91 @@ public class urlDependency {
 		
 	}
 	
+	
+	private void check_range_hour( String interval_hour )
+	{
+		String [] splits = interval_hour.split("-");
+				
+		if ( splits.length != 2 )
+		{
+			System.out.println("[ERROR] The hour range is not valid ( HH-HH )!");
+			System.exit(1);				
+		}
+				
+		int x1 = 0, x2 = 0;
+				
+		try
+		{
+			x1 = Integer.parseInt(splits[0]);
+		}
+		catch( NumberFormatException e )
+		{
+			System.out.println("[ERROR] The hour is not an integer value ( HH-HH )!");
+			System.exit(1);				
+		}
+
+		try
+		{
+			x2 = Integer.parseInt(splits[1]);
+		}
+		catch( NumberFormatException e )
+		{
+			System.out.println("[ERROR] The hour is not an integer value ( HH-HH )!");
+			System.exit(1);				
+		}			
+				
+		if ( !( ( x1 >= 0 ) && ( x1 < 24 ) ) ||
+			 !( ( x2 >= 0 ) && ( x2 < 24 ) ))
+		{
+			System.out.println("OK");
+			System.out.println("[ERROR] The hour range is not valid ( HH-HH )!");
+			System.exit(1);								
+		}
+	}
+	
+	private void check_format_interval_hour()
+	{
+		if ( interval_hour.length() < 2 ) 
+		{
+			System.out.println("[]ERROR] The input is too short!");
+			System.exit(1);
+		}
+		else
+		{
+			if ( ( interval_hour.length() == 2 ) &&
+				 ( !( interval_hour.equals("AM") ) &&
+				   !( interval_hour.equals("PM") )))
+			{	
+				int v_tmp = 0;
+				
+				try
+				{
+					v_tmp = Integer.parseInt(interval_hour);
+				}
+				catch( NumberFormatException e )
+				{
+					System.out.println("[ERROR] The hour value is not an integer!");
+					System.exit(1);					
+				}
+				
+				if ( !( ( v_tmp >= 0 ) && ( v_tmp <= 23 ) ) )
+				{
+					System.out.println("[ERROR] The hour is out of range [0-23]!");
+					System.exit(1);										
+				}
+			}
+			else
+			{
+													/*
+													 *  Format: HH-HH
+													 */
+				if ( ( interval_hour.length() > 2 ) &&
+					 ( interval_hour.length() <= 5 ))
+					check_range_hour( interval_hour );				
+			}
+		}
+	}
+	
 	private boolean checkdate( String timing )
 	{
 		boolean well_form_data = true;
@@ -233,6 +318,8 @@ public class urlDependency {
 		
 		interval_hour = splits[6];
 		
+		check_format_interval_hour();
+		
 		interval_day = splits[7];
 		
 		return well_form_data;
@@ -240,8 +327,7 @@ public class urlDependency {
 	
 	private void calculateCronExpression() throws InterruptedException{
 		String fs = null, fm= null, fo = null, dayofmonth = null, month = null, dayofweek = null;
-		//System.out.println(sleep_mode);
-		
+
 					/* random integer in a interval */
 		if ( frequency == 1 )
 		{
@@ -268,15 +354,13 @@ public class urlDependency {
 						 * the fixed frequency IS NOT DIVISIBLE for 60 
 						 */
 			else{
-				calcintervalTask();
+				fo = calcintervalTask();
 				
 				DateTime d = new DateTime();				
 				
 				int hour_now = Integer.parseInt(d.toString("HH"));
 				
-				fo = hour_start+"-"+hour_stop;
-				
-				if ( ( hour_now < hour_stop ) || ( hour_now > hour_start ) )
+				if ( ( hour_now <= hour_stop ) || ( hour_now >= hour_start ) )
 				{							
 					fs = ""+d.toString("ss");
 					fm = ""+d.toString("mm");
@@ -324,16 +408,17 @@ public class urlDependency {
 	}
 	
 	private String calcintervalTask(){
+		
 		String split[] = interval_hour.split("-");
 		String result = null;
-		
-		if(split.length > 1){
 			
+		if(split.length > 1){
+				
 			int x1 = Integer.parseInt(split[0]);
 			int x2 = Integer.parseInt(split[1]);		
-			
+				
 			int tmp;
-			
+				
 			if(x1 == 0 && x2!=23){
 				x1=x2+1;
 				x2 =23;
@@ -346,26 +431,37 @@ public class urlDependency {
 				x1=0;
 				x2 = tmp - 1;
 			}
-			
+				
 			hour_start = x1;
 			hour_stop = x2;
-			
+				
 			result = x1+"-"+x2;
-
+			
 		}else if(split[0].equals("AM")){
 			result = "12-23";
 			hour_start = 12;
 			hour_stop = 0;
-
+	
 		}else if(split[0].equals("PM")){
 			result = "0-11";
 			hour_start = 0;
 			hour_stop = 12;
+		 }
+		 else
+		 {
+			 int v_tmp = Integer.parseInt(split[0]);
 
-		}
-		
+			 hour_start = v_tmp + 1;
+			 hour_stop = v_tmp -1;
+			 
+			 result = ""+hour_start+"-"+hour_stop;
+
+		 }
+		  
+			
 		return result;
 	}
+	
 	private String calcTaskDay(){
 		String day[] = {"MON","TUE","WED","THU","FRI","SAT","SUN"};
 		String split[] = interval_day.split(",");
