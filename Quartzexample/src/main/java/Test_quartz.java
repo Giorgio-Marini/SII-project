@@ -1,6 +1,7 @@
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.NoSuchElementException;
@@ -96,7 +97,7 @@ public class Test_quartz{
 		
 		list_config_file = read_filename(configPath);
 		
-		if ( list_config_file.size() != 3 )
+		if ( list_config_file.size() != 4 )
 		{
 			System.out.println("[ERROR] The config file hasn't got the path of all files to run the application! ");
 			System.exit(1);
@@ -147,6 +148,16 @@ public class Test_quartz{
 		scannerUserAgent.close();
 	}
 	
+	private static void print_info_system( String info_system_path ) throws IOException
+	{
+		FileWriter fw = new FileWriter(info_system_path);
+		
+		fw.write("Operating System: 			 "+System.getProperty("os.name")+"\n");
+		fw.write("Operating System Architecture: "+System.getProperty("os.arch")+"\n");
+		fw.write("Operating System Kernel: 		 "+System.getProperty("os.version")+"\n");
+		
+		fw.close();
+	}
 	
 	//read config file of the url and timing
 	public static void readConfigFile(String configPath) throws IOException, InterruptedException{
@@ -155,13 +166,15 @@ public class Test_quartz{
 		
 		String path_url_filename = "",
 			   path_timing_filename = "",
-			   path_userAgent_filename = "";
+			   path_userAgent_filename = "",
+			   path_info_system = "";
 		
 		list_config_file = check_config_file(configPath);
 		
 		path_url_filename 		= list_config_file.get(0);
 		path_timing_filename 	= list_config_file.get(1);
 		path_userAgent_filename = list_config_file.get(2);		
+		path_info_system 		= list_config_file.get(3); 
 		
 		check_numb_rows_files(path_url_filename, 
 						 path_timing_filename,
@@ -170,6 +183,8 @@ public class Test_quartz{
 		create_request_job( path_url_filename, 
 							path_timing_filename,
 							path_userAgent_filename );
+		
+		print_info_system( path_info_system );
 	}
 	
 	
