@@ -1,5 +1,7 @@
 import java.io.IOException;
 import java.net.HttpURLConnection;
+import java.net.InetSocketAddress;
+import java.net.Proxy;
 import java.net.URL;
 import java.net.UnknownHostException;
 import java.nio.charset.MalformedInputException;
@@ -29,25 +31,37 @@ public class Get_url implements Job{
 			
 			String urlpax = dataMap.getString("url");
 			String userAgent = dataMap.getString("userAgent");
-			String proxy = dataMap.getString("proxy");
-			String proxy_port = dataMap.getString("proxy_port");
+			String proxy_hostname = dataMap.getString("proxy");
+			int proxy_port = Integer.parseInt(dataMap.getString("proxy_port"));
 			
 			long maxContact = dataMap.getLong("maxContact");
 			Integer index = dataMap.getInt("index");
 			Integer c = Test_quartz.maxC.get(index);
 			
-			if ( !( proxy.equals("nope") ) )
+			URL url  = new URL(urlpax);
+			
+			HttpURLConnection connection = null;
+			
+								/*
+								 * Setup a connection to a public proxy web-server
+								 */
+			if ( !( proxy_hostname.equals("nope") ) )
 			{
-				System.setProperty("http.proxyHost", proxy);
-				System.setProperty("http.proxyPort", proxy_port);			
+				Proxy proxy_web_server = new Proxy( Proxy.Type.HTTP, 
+												 	new InetSocketAddress(proxy_hostname, proxy_port) );
+
+				connection = (HttpURLConnection) url.openConnection(proxy_web_server);
+			}
+			else
+			{			
+				connection = (HttpURLConnection) url.openConnection();
 			}
 			
-			URL url  = new URL(urlpax);
-			HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-			
-			if( !userAgent.equals("default"))
+								/*
+								 * Setup the user-agent field into http header packet 
+								 */
+			if( !( userAgent.equals("default") ) )
 				connection.setRequestProperty("User-Agent", userAgent);
-			
 			
 			if(c < maxContact){
 				Test_quartz.maxC.set(index,c = c + 1);
