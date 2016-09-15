@@ -1,3 +1,4 @@
+
 import org.joda.time.DateTime;
 
 public class urlDependency {
@@ -17,6 +18,12 @@ public class urlDependency {
 	private String proxy = "";
 	private String proxy_port = "0";
 	private String CronExpression;
+	private String CronExpression_otherDays;
+	
+	public String get_CronExpression_otherDays()
+	{
+		return CronExpression_otherDays;
+	}
 	
 	public int isFrequency() {
 		return frequency;
@@ -332,6 +339,13 @@ public class urlDependency {
 		return well_form_data;
 	}
 	
+	private void calc_CronExpression_otherDays() throws InterruptedException
+	{		
+		CronExpression_otherDays = "0 0 0-23 ? * "+calcTaskDay();
+		
+		System.out.println(" other days "+CronExpression_otherDays);
+	}
+	
 	private void calculateCronExpression() throws InterruptedException{
 		String fs = null, fm= null, fo = null, dayofmonth = null, month = null, dayofweek = null;
 
@@ -346,13 +360,15 @@ public class urlDependency {
 		
 		if(sleep_mode == 1)
 		{
+			dayofweek = interval_day;
+			month = "*";
+			
 						/*
 						 * the fixed frequency IS DIVISIBLE for 60
 						 */
 			if ( checkValueFrequencySeconds(fixed_frequency)){
 				fo = calcintervalTask();
-				month= "*";
-				dayofweek = calcTaskDay();
+				
 				if(!dayofweek.equals("*") || !dayofweek.equals("0")){
 					dayofmonth = "?";
 				}else dayofmonth = "*";
@@ -379,8 +395,6 @@ public class urlDependency {
 				}
 				
 				dayofmonth = "*";
-				month = "*";
-				dayofweek = calcTaskDay();
 
 				if(!dayofweek.equals("*") || !dayofweek.equals("0")){
 					dayofmonth = "?";
@@ -395,6 +409,8 @@ public class urlDependency {
 		}
 		
 		CronExpression = fs+" "+fm+" "+ fo +" "+dayofmonth+" "+month+" "+dayofweek;
+		
+		calc_CronExpression_otherDays();
 	};
 	
 	
