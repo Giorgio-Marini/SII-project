@@ -1,4 +1,3 @@
-
 import org.joda.time.DateTime;
 
 public class urlDependency {
@@ -16,8 +15,9 @@ public class urlDependency {
 	private int frequency;
 	private String user_agent;
 	private String proxy = "";
-	private String proxy_port = "";
+	private String proxy_port = "0";
 	private String CronExpression;
+	
 	public int isFrequency() {
 		return frequency;
 	}
@@ -90,8 +90,10 @@ public class urlDependency {
 		return url;
 	}
 	public void setUrl(String url) {
-		this.url = url;
+		
+		this.url = url;			
 	}
+	
 	public urlDependency() {
 	};
 	public urlDependency(int fixed_frequency, int min_interval_random,

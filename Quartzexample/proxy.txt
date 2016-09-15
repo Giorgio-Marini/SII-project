@@ -1,3 +1,3 @@
 // Public Proxy's IP Address
+177.69.209.53 8080
 85.10.235.253 8080
-nope
