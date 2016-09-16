@@ -1,9 +1,29 @@
 
+import java.net.InetAddress;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.UnknownHostException;
+
 import org.joda.time.DateTime;
 
 public class urlDependency {
-	
-	private String url;
+											/*
+											 * Reference to a web resource 
+											 */
+	private URL url = null;
+											/*
+											 * Reference to a public proxy server
+											 */
+	private InetAddress proxy_ip;
+	private int proxy_port;
+											/*
+											 * User-agent value in HTTP packet
+											 */
+	private String user_agent;
+											/*
+											 * Sleep mode parameters
+											 */
+	private int frequency;
 	private int fixed_frequency;
 	private int min_interval_random;
 	private int max_interval_random;
@@ -13,10 +33,7 @@ public class urlDependency {
 	private String interval_day;
 	private int hour_start;
 	private int hour_stop;
-	private int frequency;
-	private String user_agent;
-	private String proxy = "";
-	private String proxy_port = "0";
+
 	private String CronExpression;
 	private String CronExpression_otherDays;
 	
@@ -93,16 +110,101 @@ public class urlDependency {
 	private void setCronExpression(String cronExpression) {
 		CronExpression = cronExpression;
 	}
-	public String getUrl() {
-		return url;
-	}
-	public void setUrl(String url) {
+	
+	
+	public String getUrl() 
+	{
+		String url_address = "";
 		
-		this.url = url;			
+		if ( url != null )
+		 url_address = url.toString();
+		else
+		{
+		  System.out.println("[ERROR] The URL is not set!");
+		  System.exit(1);
+		}
+		
+		return url_address;
 	}
 	
-	public urlDependency() {
+	public void setUrl(String url_address)
+	{
+		try
+		{
+			url = new URL(url_address);
+		}
+		catch( MalformedURLException e )
+		{
+			System.out.println("[ERROR] The URL is Malformed!");
+			System.exit(1);
+		}	
+	}
+															/*
+															 * The address value is "ip_proxy port_numb"
+															 */
+	public void set_newProxyServer( String address )
+	{
+		String [] public_proxy_address = address.split(" ");
+		
+		String proxy_ip = public_proxy_address[0];
+		
+		if ( !proxy_ip.equals("nope"))
+		{
+			if ( public_proxy_address.length == 2 )
+			{
+				try
+				{
+					 proxy_port = Integer.parseInt(public_proxy_address[1]);
+				}
+				catch( NumberFormatException e )
+				{
+					System.out.println("[ERROR] The port number is not an integer value\n");
+					System.exit(1);
+				}
+				
+				setProxyIP( proxy_ip );
+			}
+				
+			else
+			{
+				System.out.println("[ERROR] Invalid proxy_ip!");
+				System.exit(1);
+			}
+		}
+	}
+	
+	
+	
+	public void setProxyIP( String ip )
+	{
+		try {
+			proxy_ip = InetAddress.getByName(ip);
+		} catch (UnknownHostException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public String getProxyIP()
+	{
+		return proxy_ip.getHostAddress();
+	}
+
+	public void setProxy_port(int proxy_port) {
+		this.proxy_port = proxy_port;
+	}	
+	
+	public String getProxy_port() {
+		return ""+proxy_port;
+	}
+
+
+	
+	
+	public urlDependency() 
+	{
 	};
+	
 	public urlDependency(int fixed_frequency, int min_interval_random,
 			int max_interval_random, long max_contact, int sleep_mode,
 			String interval_hour, String interval_day, int frequency) {
@@ -526,21 +628,4 @@ public class urlDependency {
 	public void setUser_agent(String user_agent) {
 		this.user_agent = user_agent;
 	}
-
-	public String getProxy() {
-		return proxy;
-	}
-
-	public void setProxy(String proxy) {
-		this.proxy = proxy;
-	}
-
-	public String getProxy_port() {
-		return proxy_port;
-	}
-
-	public void setProxy_port(String proxy_port) {
-		this.proxy_port = proxy_port;
-	}	
-
 }

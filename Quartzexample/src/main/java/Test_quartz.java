@@ -137,14 +137,7 @@ public class Test_quartz{
 				String timing = scannerTime.nextLine();
 				String own_url = scannerUrl.nextLine();
 				String userAgent = scannerUserAgent.nextLine();
-				
-				String [] public_proxy_address = scannerProxy.nextLine().split(" ");
-				
-				String proxy_ip = public_proxy_address[0];
-				String proxy_port = "";
-				
-				if ( !proxy_ip.equals("nope"))
-				 proxy_port = public_proxy_address[1];
+				String proxy_address = scannerProxy.nextLine();
 				
 				urlD.setUrl(own_url);
 				
@@ -156,17 +149,11 @@ public class Test_quartz{
 				urlD.setUser_agent(userAgent);
 				
 				System.out.println("[useragent] "+urlD.getUser_agent());
-				urlD.setProxy(proxy_ip);
-
-				System.out.println("[proxy] "+urlD.getProxy());				
-
-				if ( !proxy_ip.equals("nope"))
-				{
-					urlD.setProxy_port(proxy_port);
-
-					System.out.println("[proxy_port] "+urlD.getProxy_port());
-				}
 				
+				urlD.set_newProxyServer(proxy_address);
+
+				System.out.println("[proxy] "+urlD.getProxyIP());				
+				System.out.println("[proxy_port] "+urlD.getProxy_port());
 					
 				connectUrl.add(urlD);
 			}
@@ -238,7 +225,7 @@ public class Test_quartz{
 										.usingJobData("index", i)
 										.usingJobData("maxContact", connectUrl.get(i).getMax_contact())
 										.usingJobData("userAgent", connectUrl.get(i).getUser_agent())
-										.usingJobData("proxy", connectUrl.get(i).getProxy())
+										.usingJobData("proxy", connectUrl.get(i).getProxyIP())
 										.usingJobData("proxy_port", connectUrl.get(i).getProxy_port())
 										.build();
 				
@@ -247,7 +234,7 @@ public class Test_quartz{
 										  .usingJobData("index", i)
 										  .usingJobData("maxContact", connectUrl.get(i).getMax_contact())
 										  .usingJobData("userAgent", connectUrl.get(i).getUser_agent())
-										  .usingJobData("proxy", connectUrl.get(i).getProxy())
+										  .usingJobData("proxy", connectUrl.get(i).getProxyIP())
 										  .usingJobData("proxy_port", connectUrl.get(i).getProxy_port())
 										  .build();
 				
@@ -263,7 +250,7 @@ public class Test_quartz{
 					.usingJobData("index", i)
 					.usingJobData("maxContact", connectUrl.get(i).getMax_contact())
 					.usingJobData("userAgent", connectUrl.get(i).getUser_agent())
-					.usingJobData("proxy", connectUrl.get(i).getProxy())
+					.usingJobData("proxy", connectUrl.get(i).getProxyIP())
 					.usingJobData("proxy_port", connectUrl.get(i).getProxy_port())
 					.build();
 			}
