@@ -19,8 +19,75 @@ import org.slf4j.LoggerFactory;
 
 public class Get_url implements Job{
 
-	
-	public void conn_http( JobDataMap dataMap, URL url, String urlpax, Logger logger ) throws IOException
+															/*
+															 * 	connect to a resource by HTTP protocol
+															 * 
+															 */
+	private void conn_http( URL url, Proxy proxy_web_server, String userAgent, 
+							int index, int c, long maxContact, Logger logger ) throws IOException
+	{
+		HttpURLConnection connection = (HttpURLConnection) url.openConnection(proxy_web_server);
+
+		String urlpax = url.toString();
+		
+				/*
+				 * Setup the user-agent field into http header packet 
+				 */
+		if( !( userAgent.equals("default") ) )
+			connection.setRequestProperty("User-Agent", userAgent);
+		
+		if(c < maxContact)
+		{
+			Test_quartz.maxC.set(index,c = c + 1);
+		
+			DateTime date = new DateTime();
+		
+			int code  = connection.getResponseCode();
+		
+			if(code == HttpURLConnection.HTTP_OK){
+				System.out.println("url "+ urlpax +"status connection :: " + code+ " date:: " + date.toString("dd-MM-yyyy HH:mm:ss"));
+				logger.info("{},{}",urlpax,date);
+			}
+		}
+	}
+
+															/*
+															 * 	connect to a resource by HTTPs protocol
+															 * 
+															 */	
+	private void conn_https( URL url, Proxy proxy_web_server, String userAgent, 
+							 int index, int c, long maxContact, Logger logger ) throws IOException
+	{
+		HttpsURLConnection connection = (HttpsURLConnection) url.openConnection(proxy_web_server);
+
+		String urlpax = url.toString();
+		
+				/*
+				 * Setup the user-agent field into http header packet 
+				 */
+		if( !( userAgent.equals("default") ) )
+			connection.setRequestProperty("User-Agent", userAgent);
+		
+		if(c < maxContact)
+		{
+			Test_quartz.maxC.set(index,c = c + 1);
+		
+			DateTime date = new DateTime();
+		
+			int code = connection.getResponseCode();
+		
+			if(code == HttpURLConnection.HTTP_OK){
+				System.out.println("url "+ urlpax +"status connection :: " + code+ " date:: " + date.toString("dd-MM-yyyy HH:mm:ss"));
+				logger.info("{},{}",urlpax,date);
+			}
+		}
+	}
+
+															/*
+															 * 	retrieve the data to the connection.
+															 * 
+															 */	
+	private void connect( JobDataMap dataMap, URL url, Logger logger ) throws IOException
 	{
 		String userAgent = dataMap.getString("userAgent");
 		String proxy_hostname = dataMap.getString("proxy");
@@ -30,95 +97,30 @@ public class Get_url implements Job{
 		Integer index = dataMap.getInt("index");
 		Integer c = Test_quartz.maxC.get(index);
 
-		HttpURLConnection connection = null;
+		Proxy proxy_web_server = Proxy.NO_PROXY;
 		
 				/*
 				 * Setup a connection to a public proxy web-server.
 				 */
 		if ( !( proxy_hostname.equals("nope") ) )
 		{
-			Proxy proxy_web_server = new Proxy( Proxy.Type.HTTP, 
-								 	 new InetSocketAddress(proxy_hostname, proxy_port) );
-		
-			connection = (HttpURLConnection) url.openConnection(proxy_web_server);
+			proxy_web_server = new Proxy( Proxy.Type.HTTP, 
+							   new InetSocketAddress(proxy_hostname, proxy_port) );
 		}
-		else
-		{			
-			connection = (HttpURLConnection) url.openConnection();
-		}		
 
-				/*
-				 * Setup the user-agent field into http header packet 
-				 */
-		if( !( userAgent.equals("default") ) )
-			connection.setRequestProperty("User-Agent", userAgent);
-		
-		if(c < maxContact)
+		if ( url.getProtocol().equals("http") )
+			conn_http( url, proxy_web_server, userAgent, index, c, maxContact, logger);
+		else 
 		{
-			Test_quartz.maxC.set(index,c = c + 1);
-		
-			DateTime date = new DateTime();
-		
-			int code  = connection.getResponseCode();
-		
-			if(code == HttpURLConnection.HTTP_OK){
-				System.out.println("url "+ urlpax +"status connection :: " + code+ " date:: " + date.toString("dd-MM-yyyy HH:mm:ss"));
-				logger.info("{},{}",urlpax,date);
+			if ( url.getProtocol().equals("https") )
+				conn_https( url, proxy_web_server, userAgent, index, c, maxContact, logger);
+			else
+			{
+				System.out.println("[ERROR] The protocol is unknown! ( only allowed \"http\" or \"https\")");
+				System.exit(1);
 			}
 		}
 	}	
-	
-	public void conn_https( JobDataMap dataMap, URL url, String urlpax, Logger logger ) throws IOException
-	{	
-		String userAgent = dataMap.getString("userAgent");
-	
-		String proxy_hostname = dataMap.getString("proxy");
-		
-		int proxy_port = Integer.parseInt(dataMap.getString("proxy_port"));
-	
-		System.out.println("OK HTTPS");
-		long maxContact = dataMap.getLong("maxContact");
-		Integer index = dataMap.getInt("index");
-		Integer c = Test_quartz.maxC.get(index);
-
-		HttpsURLConnection connection = null;
-		
-
-				/*
-				 * Setup a connection to a public proxy web-server.
-				 */
-		if ( !( proxy_hostname.equals("nope") ) )
-		{
-			Proxy proxy_web_server = new Proxy( Proxy.Type.HTTP, 
-								 	 new InetSocketAddress(proxy_hostname, proxy_port) );
-		
-			connection = (HttpsURLConnection) url.openConnection(proxy_web_server);
-		}
-		else
-		{			
-			connection = (HttpsURLConnection) url.openConnection();
-		}		
-
-				/*
-				 * Setup the user-agent field into http header packet 
-				 */
-		if( !( userAgent.equals("default") ) )
-			connection.setRequestProperty("User-Agent", userAgent);
-		
-		if(c < maxContact)
-		{
-			Test_quartz.maxC.set(index,c = c + 1);
-		
-			DateTime date = new DateTime();
-		
-			int code  = connection.getResponseCode();
-		
-			if(code == HttpURLConnection.HTTP_OK){
-				System.out.println("url "+ urlpax +"status connection :: " + code+ " date:: " + date.toString("dd-MM-yyyy HH:mm:ss"));
-				logger.info("{},{}",urlpax,date);
-			}
-		}		
-	}
 	
 	public void execute(JobExecutionContext context) throws JobExecutionException{
 	   
@@ -128,20 +130,9 @@ public class Get_url implements Job{
 		{	
 			JobDataMap dataMap = context.getJobDetail().getJobDataMap();
 
-			String urlpax = dataMap.getString("url");
-
-			URL url  = new URL(urlpax);
+			URL url  = new URL( dataMap.getString("url") );
 			
-			String []spliturl = urlpax.split(":");
-			
-			if ( spliturl[0].equals("http") )
-			{
-				conn_http( dataMap, url, urlpax, logger );
-			}
-			else if ( spliturl[0].equals("https"))
-			{
-				conn_https( dataMap, url, urlpax, logger );				
-			}
+			connect( dataMap, url, logger );
 
 		}catch(MalformedInputException ex){
 				ex.printStackTrace();
