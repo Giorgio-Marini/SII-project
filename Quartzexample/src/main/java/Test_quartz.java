@@ -326,97 +326,10 @@ public class Test_quartz{
 		}
 	}
 	
-	private static File get_pathDirectorySearchBrowser( String os )
-	{
-		if ( os.equals("Linux") )
-			return new File("/usr/bin");
-		else
-		{
-			if ( os.equals("Windows"))
-				return new File("C:/Programmi/");
-			else
-			{
-				System.out.println("[ERROR] The retrieving browser application function is not supported on your Operating System!");
-				System.exit(1);
-				return null;
-			}
-		}		
-	}
-	
-	private static String[] get_listSupportedBrowser( String os )
-	{		
-		if ( os.equals("Linux") )
-		{
-			String[] list = {"firefox", "chromium-browser","opera","netsurf-gtk","qupzilla","konqueror"};
-			return list;
-		}
-		else
-		{
-			if ( os.equals("Windows") )
-			{
-				String[] list = {"Firefox", "Microsoft Edge"};
-				return list;
-			}
-			else
-			{
-				System.out.println("[ERROR] The retrieving browser application function is not supported on your Operating System!");
-				System.exit(1);
-				return null;
-			}
-		}		
-	}
-	
-	private static ArrayList<String> find_installed_browser( String[] list_files, String[] list_browser )
-	{
-		Arrays.sort(list_files);
-		
-		ArrayList<String> list_browser_found = new ArrayList<String>();
-		
-		int i = 0;
-		
-		while ( i < list_browser.length )
-		{
-			if ( Arrays.binarySearch(list_files, list_browser[i]) >= 0 )
-				list_browser_found.add(list_browser[i]);
-			++i;
-		}
-		
-		return list_browser_found;
-	}
-	
-	private static void writeFile( String pathBrowserFile, ArrayList<String> browser_founded ) throws IOException
-	{
-		FileWriter fw = new FileWriter( pathBrowserFile );
-		
-		for( String browser : browser_founded )
-		{
-			fw.write(browser+"\n");
-		}
-		
-		fw.close();
-	}
-	
-	private static void find_browser_system( String pathBrowserFile ) throws IOException
-	{	
-		String operating_system = System.getProperty("os.name");
-		
-		File directory = get_pathDirectorySearchBrowser( operating_system );
-		
-		String[] list_browser = get_listSupportedBrowser( operating_system );
-
-		String[] list_files = directory.list();
-		
-		ArrayList<String> browser_founded = find_installed_browser( list_files, list_browser );
-		
-		writeFile( pathBrowserFile, browser_founded );
-	}
-	
-	
-	
 	public static void main(String[] args) throws Exception{
 		System.out.println("OUR BOT IS STARTING");
 		
-		find_browser_system("browser.txt");
+		Browser.find_browser_system("browser.txt");
 		
 		readConfigFile("config.txt");
 		
